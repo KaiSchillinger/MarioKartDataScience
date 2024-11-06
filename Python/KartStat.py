@@ -10,7 +10,6 @@ streckenauswahl = df_strecken['Strecke'].tolist()
 controller_options = ["Pro", "Plus Rot", "Plus Gelb", "Minus Blau", "Minus Gelb"]
 
 # Funktion, um den Datensatz zu laden oder zu erstellen
-@st.cache_data
 def load_data():
     if os.path.exists(DATAFILE):
         return pd.read_csv(DATAFILE)
@@ -69,7 +68,11 @@ def main():
         current_player = st.session_state.players[st.session_state.current_player_index]
         st.header(f"Daten für Spieler: {current_player}")
 
+        datum = st.date_input("Datum", value=datetime.date.today())
         controller = st.selectbox("Controller", controller_options)
+
+        # Boolean für Beamer (Ja/Nein)
+        beamer = st.checkbox("Beamer")
 
         # Zwei Spalten für Platzierungen und Strecken nebeneinander
         col1, col2 = st.columns(2)
@@ -102,14 +105,15 @@ def main():
             st.subheader("Kiffs")
             kiff_count = st.number_input("Kiff Count", min_value=0)
 
-        datum = st.date_input("Datum", value=datetime.date.today())
-        rennen_tag = st.number_input("Rennentag", min_value=0)
-        gesamt_score = st.number_input("Gesamt Score", min_value=0)
+        # Weitere Eingabefelder
+        col5, col6, col7 = st.columns(3)
 
-        # Boolean für Beamer (Ja/Nein)
-        beamer = st.checkbox("Beamer")
-
-        fehlstarts = st.number_input("Fehlstarts", min_value=0)
+        with col5:
+            rennen_tag = st.number_input("Rennentag", min_value=0)
+        with col6:
+            gesamt_score = st.number_input("Gesamt Score", min_value=0)
+        with col7:
+            fehlstarts = st.number_input("Fehlstarts", min_value=0)
 
         if st.button("Daten für Spieler hinzufügen"):
             # Neue Daten zur Tabelle hinzufügen

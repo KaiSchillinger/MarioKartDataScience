@@ -1,16 +1,9 @@
 id,spieler,platzierung,controller,strecken,drink_count,kiff_count,datum,rennen_tag,gesamt_score,beamer,fehlstarts
-1,aaaa,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",2,1,2024-10-31,1,46,True,1
-2,sssss,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",2,1,2024-10-31,1,46,True,1
-3,ddddd,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",2,1,2024-10-31,1,46,True,1
-4,123,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",3,2,2024-10-31,1,2,False,0
-5,aaaaa,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
-6,ssss,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
-7,ss,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
-8,ddd,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
-9,aaa,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
-10,1,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
-11,2,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
-12,3,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
-13,asd,"[1, 1, 1, 1]",Pro,"[""Yoshi's Island"", ""Bowser's Castle"", ""Bowser's Castle"", 'Mario Circuit']",2,0,2024-11-06,0,0,False,0
-14,qwe,"[1, 1, 1, 1]",Pro,"[""Yoshi's Island"", ""Bowser's Castle"", ""Bowser's Castle"", 'Mario Circuit']",2,0,2024-11-06,0,0,False,0
-15,yxc,"[1, 1, 1, 1]",Pro,"[""Yoshi's Island"", ""Bowser's Castle"", ""Bowser's Castle"", 'Mario Circuit']",2,0,2024-11-06,0,0,False,0
+1,Daniel,"[1, 2, 2, 4]",Plus Gelb,"['Steinblock-Ruinen', 'Blätterwald (Wii)', 'Sonnenuntergangs-Wüste (GBA)', 'Bangkok-Abendrot (Tour)']",0,0,2024-11-06,1,48,True,1
+2,Kai,"[3, 1, 5, 1]",Plus Rot,"['Steinblock-Ruinen', 'Blätterwald (Wii)', 'Sonnenuntergangs-Wüste (GBA)', 'Bangkok-Abendrot (Tour)']",0,0,2024-11-06,1,48,True,0
+3,Daniel,"[8, 7, 5, 3]",Plus Gelb,"['Los-Angeles-Strandpartie (Tour)', 'Donut-Ebene 3 (SNES)', 'DK Dschungel (3DS)', 'Rom-Rambazamba (Tour)']",0,0,2024-11-06,2,29,True,0
+4,Niclas,"[3, 3, 2, 1]",Minus Gelb,"['Los-Angeles-Strandpartie (Tour)', 'Donut-Ebene 3 (SNES)', 'DK Dschungel (3DS)', 'Rom-Rambazamba (Tour)']",0,0,2024-11-06,2,47,True,1
+5,Kai,"[6, 1, 1, 2]",Pro,"['Los-Angeles-Strandpartie (Tour)', 'Donut-Ebene 3 (SNES)', 'DK Dschungel (3DS)', 'Rom-Rambazamba (Tour)']",0,0,2024-11-06,2,49,True,0
+6,Daniel,"[2, 5, 3, 4]",Plus Gelb,"['Baby-Park (GCN)', 'Warios Goldmine (Wii)', 'Waluigi-Arena (GCN)', 'Wasserpark']",0,0,2024-11-06,3,39,True,0
+7,Niclas,"[1, 3, 1, 1]",Plus Gelb,"['Baby-Park (GCN)', 'Warios Goldmine (Wii)', 'Waluigi-Arena (GCN)', 'Wasserpark']",0,0,2024-11-06,2,55,True,1
+8,Kai,"[7, 1, 2, 6]",Pro,"['Baby-Park (GCN)', 'Warios Goldmine (Wii)', 'Waluigi-Arena (GCN)', 'Wasserpark']",0,0,2024-11-06,3,40,True,1
