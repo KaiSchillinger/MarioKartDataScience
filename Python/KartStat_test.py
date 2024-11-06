@@ -74,8 +74,6 @@ def main():
 
     # Step 3: Dateneingabe für jeden Spieler
     elif st.session_state.step == 3:
-        current_player = st.session_state.players[st.session_state.current_player_index]
-        st.header(f"Daten für Spieler: {current_player}")
 
         datum = st.date_input("Datum", value=datetime.date.today())
         controller = st.selectbox("Controller", controller_options)
@@ -84,12 +82,11 @@ def main():
         beamer = st.checkbox("Beamer")
 
         # Spalten für Strecken und dynamische Spalten Platzierungen
-
         cols = st.columns(1 + st.session_state.player_count)
 
         # Streckenauswahl in der ersten Spalte
         with cols[0]:
-            st.subheader("Strecken")
+            st.subheader("Strecke")
             strecken_options = streckenauswahl
             strecke_1 = st.selectbox("Strecke 1", strecken_options)
             strecke_2 = st.selectbox("Strecke 2", strecken_options, index=1)
@@ -101,18 +98,21 @@ def main():
         platzierungen_liste = []    # Liste zum Speichern aller Platzierungen
         gesamt_scores_liste = []    # Liste zum Speichern der Scores für jedes Platzierung-Set
 
-        for idx in range(st.session_state.player_count):
-            with cols[idx + 1]:
-                st.subheader(f"Platzierungen Set {idx + 1}")
-                platzierung_1 = st.number_input(f"Platzierung 1 (Set {idx + 1})", min_value=1, max_value=12, step=1)
-                platzierung_2 = st.number_input(f"Platzierung 2 (Set {idx + 1})", min_value=1, max_value=12, step=1)
-                platzierung_3 = st.number_input(f"Platzierung 3 (Set {idx + 1})", min_value=1, max_value=12, step=1)
-                platzierung_4 = st.number_input(f"Platzierung 4 (Set {idx + 1})", min_value=1, max_value=12, step=1)
+        # Spalten für Platzierungen erstellen und Spielernamen als Überschriften setzen
+        for idx, col in enumerate(cols[1:]):  # Ab cols[1] beginnen, da cols[0] für Strecken reserviert ist
+            player_name = st.session_state.players[idx] if idx < len(st.session_state.players) else f"Spieler {idx + 1}"
+
+            with col:
+                st.subheader(player_name)  # Spielernamen als Header anzeigen
+                platzierung_1 = st.number_input(f"Platzierung 1 ({player_name})", min_value=1, max_value=12, step=1)
+                platzierung_2 = st.number_input(f"Platzierung 2 ({player_name})", min_value=1, max_value=12, step=1)
+                platzierung_3 = st.number_input(f"Platzierung 3 ({player_name})", min_value=1, max_value=12, step=1)
+                platzierung_4 = st.number_input(f"Platzierung 4 ({player_name})", min_value=1, max_value=12, step=1)
 
                 platzierung_set = [platzierung_1, platzierung_2, platzierung_3, platzierung_4]
                 platzierungen_liste.append(platzierung_set)
 
-                # Gesamtscore für das aktuelle Platzierung-Set berechnen
+                # Gesamtscore für den aktuellen Spieler berechnen
                 gesamt_score = sum(platzierungen_mapping.get(p, 0) for p in platzierung_set)
                 gesamt_scores_liste.append(gesamt_score)
 
