@@ -53,7 +53,7 @@ def main():
     # Step 1: Spieleranzahl abfragen
     if st.session_state.step == 1:
         st.header("Anzahl der Spieler eingeben")
-        player_count = st.number_input("Anzahl der Spieler", min_value=1, step=1)
+        player_count = st.number_input("Anzahl der Spieler", min_value=1, max_value=4, step=1)
 
         if st.button("Weiter"):
             st.session_state.player_count = player_count
@@ -96,10 +96,10 @@ def main():
 
         with col1_2:
             st.subheader("Platzierungen")
-            platzierung_1 = st.number_input("Platzierung 1", min_value=1)
-            platzierung_2 = st.number_input("Platzierung 2", min_value=1)
-            platzierung_3 = st.number_input("Platzierung 3", min_value=1)
-            platzierung_4 = st.number_input("Platzierung 4", min_value=1)
+            platzierung_1 = st.number_input("Platzierung 1", min_value=1, max_value=12, step=1)
+            platzierung_2 = st.number_input("Platzierung 2", min_value=1, max_value=12, step=1)
+            platzierung_3 = st.number_input("Platzierung 3", min_value=1, max_value=12, step=1)
+            platzierung_4 = st.number_input("Platzierung 4", min_value=1, max_value=12, step=1)
             platzierung = [platzierung_1, platzierung_2, platzierung_3, platzierung_4]
 
             # Gesamtscore berechnen

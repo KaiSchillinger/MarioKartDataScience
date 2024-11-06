@@ -5,10 +5,18 @@ import datetime
 
 # Dateiname für den Datensatz
 DATAFILE = 'data.csv'
+ZIELFILE = 'data_test.csv'
+
+# DF Strecken
 df_strecken = pd.read_csv('../Zusatzdaten/strecken_cups.csv')
 streckenauswahl = df_strecken['Strecke'].tolist()
+
+# DF Scores
+df_scores = pd.read_csv('../Zusatzdaten/scores.csv')
+platzierungen_mapping = df_scores.set_index('platz')['punkte'].to_dict()
+
+# Controller
 controller_options = ["Pro", "Plus Rot", "Plus Gelb", "Minus Blau", "Minus Gelb"]
-score_dict = {1:15, }
 
 # Funktion, um den Datensatz zu laden oder zu erstellen
 def load_data():
@@ -23,7 +31,7 @@ def load_data():
 
 # Funktion, um den Datensatz zu speichern
 def save_data(data):
-    data.to_csv(DATAFILE, index=False)
+    data.to_csv(ZIELFILE, index=False)
 
 
 # Hauptfunktion der Streamlit-App
@@ -46,7 +54,7 @@ def main():
     # Step 1: Spieleranzahl abfragen
     if st.session_state.step == 1:
         st.header("Anzahl der Spieler eingeben")
-        player_count = st.number_input("Anzahl der Spieler", min_value=1, step=1)
+        player_count = st.number_input("Anzahl der Spieler", min_value=1, max_value=4, step=1)
 
         if st.button("Weiter"):
             st.session_state.player_count = player_count
@@ -75,10 +83,12 @@ def main():
         # Boolean für Beamer (Ja/Nein)
         beamer = st.checkbox("Beamer")
 
-        # Zwei Spalten für Platzierungen und Strecken nebeneinander
-        col1_1, col1_2 = st.columns(2)
+        # Spalten für Strecken und dynamische Spalten Platzierungen
 
-        with col1_1:
+        cols = st.columns(1 + st.session_state.player_count)
+
+        # Streckenauswahl in der ersten Spalte
+        with cols[0]:
             st.subheader("Strecken")
             strecken_options = streckenauswahl
             strecke_1 = st.selectbox("Strecke 1", strecken_options)
@@ -87,13 +97,24 @@ def main():
             strecke_4 = st.selectbox("Strecke 4", strecken_options, index=3)
             strecken = [strecke_1, strecke_2, strecke_3, strecke_4]
 
-        with col1_2:
-            st.subheader("Platzierungen")
-            platzierung_1 = st.number_input("Platzierung 1", min_value=1)
-            platzierung_2 = st.number_input("Platzierung 2", min_value=1)
-            platzierung_3 = st.number_input("Platzierung 3", min_value=1)
-            platzierung_4 = st.number_input("Platzierung 4", min_value=1)
-            platzierung = [platzierung_1, platzierung_2, platzierung_3, platzierung_4]
+        # Dynamische Platzierungsspalten in den restlichen Spalten
+        platzierungen_liste = []    # Liste zum Speichern aller Platzierungen
+        gesamt_scores_liste = []    # Liste zum Speichern der Scores für jedes Platzierung-Set
+
+        for idx in range(st.session_state.player_count):
+            with cols[idx + 1]:
+                st.subheader(f"Platzierungen Set {idx + 1}")
+                platzierung_1 = st.number_input(f"Platzierung 1 (Set {idx + 1})", min_value=1, max_value=12, step=1)
+                platzierung_2 = st.number_input(f"Platzierung 2 (Set {idx + 1})", min_value=1, max_value=12, step=1)
+                platzierung_3 = st.number_input(f"Platzierung 3 (Set {idx + 1})", min_value=1, max_value=12, step=1)
+                platzierung_4 = st.number_input(f"Platzierung 4 (Set {idx + 1})", min_value=1, max_value=12, step=1)
+
+                platzierung_set = [platzierung_1, platzierung_2, platzierung_3, platzierung_4]
+                platzierungen_liste.append(platzierung_set)
+
+                # Gesamtscore für das aktuelle Platzierung-Set berechnen
+                gesamt_score = sum(platzierungen_mapping.get(p, 0) for p in platzierung_set)
+                gesamt_scores_liste.append(gesamt_score)
 
         # Weitere Eingabefelder
         col2_1, col2_2 = st.columns(2)
@@ -107,13 +128,11 @@ def main():
             kiff_count = st.number_input("Kiff Count", min_value=0)
 
         # Weitere Eingabefelder
-        col3_1, col3_2, col3_3 = st.columns(3)
+        col3_1, col3_2 = st.columns(2)
 
         with col3_1:
             rennen_tag = st.number_input("Rennentag", min_value=0)
         with col3_2:
-            gesamt_score = st.number_input("Gesamt Score", min_value=0)
-        with col3_3:
             fehlstarts = st.number_input("Fehlstarts", min_value=0)
 
         if st.button("Daten für Spieler hinzufügen"):
