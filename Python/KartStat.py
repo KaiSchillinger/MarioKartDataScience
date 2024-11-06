@@ -5,9 +5,12 @@ import datetime
 
 # Dateiname für den Datensatz
 DATAFILE = 'data.csv'
-
+df_strecken = pd.read_csv('../Zusatzdaten/strecken_cups.csv')
+streckenauswahl = df_strecken['Strecke'].tolist()
+controller_options = ["Pro", "Plus Rot", "Plus Gelb", "Minus Blau", "Minus Gelb"]
 
 # Funktion, um den Datensatz zu laden oder zu erstellen
+@st.cache_data
 def load_data():
     if os.path.exists(DATAFILE):
         return pd.read_csv(DATAFILE)
@@ -66,7 +69,6 @@ def main():
         current_player = st.session_state.players[st.session_state.current_player_index]
         st.header(f"Daten für Spieler: {current_player}")
 
-        controller_options = ["Pro", "Plus Rot", "Plus Gelb", "Minus Blau", "Minus Gelb"]
         controller = st.selectbox("Controller", controller_options)
 
         # Zwei Spalten für Platzierungen und Strecken nebeneinander
@@ -74,7 +76,7 @@ def main():
 
         with col1:
             st.subheader("Strecken")
-            strecken_options = ["Mario Circuit", "Yoshi's Island", "Rainbow Road", "Bowser's Castle"]
+            strecken_options = streckenauswahl
             strecke_1 = st.selectbox("Strecke 1", strecken_options)
             strecke_2 = st.selectbox("Strecke 2", strecken_options, index=1)
             strecke_3 = st.selectbox("Strecke 3", strecken_options, index=2)

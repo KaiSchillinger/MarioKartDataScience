@@ -11,3 +11,6 @@ id,spieler,platzierung,controller,strecken,drink_count,kiff_count,datum,rennen_t
 10,1,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
 11,2,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
 12,3,"[1, 1, 1, 1]",Pro,"['Mario Circuit', ""Yoshi's Island"", 'Rainbow Road', ""Bowser's Castle""]",0,0,2024-10-31,0,0,False,0
+13,asd,"[1, 1, 1, 1]",Pro,"[""Yoshi's Island"", ""Bowser's Castle"", ""Bowser's Castle"", 'Mario Circuit']",2,0,2024-11-06,0,0,False,0
+14,qwe,"[1, 1, 1, 1]",Pro,"[""Yoshi's Island"", ""Bowser's Castle"", ""Bowser's Castle"", 'Mario Circuit']",2,0,2024-11-06,0,0,False,0
+15,yxc,"[1, 1, 1, 1]",Pro,"[""Yoshi's Island"", ""Bowser's Castle"", ""Bowser's Castle"", 'Mario Circuit']",2,0,2024-11-06,0,0,False,0
