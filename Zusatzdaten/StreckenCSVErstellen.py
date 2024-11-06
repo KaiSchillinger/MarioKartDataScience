@@ -43,10 +43,18 @@ data = {
             "Doppelkirschen-Cup", "Doppelkirschen-Cup", "Doppelkirschen-Cup", "Eichel-Cup", "Eichel-Cup", "Eichel-Cup",
             "Eichel-Cup", "Stachi-Cup", "Stachi-Cup", "Stachi-Cup", "Stachi-Cup"]
 }
+score = {'platz':[1,2,3,4,5,6,7,8,9,10,11,12],
+         'punkte': [15,12,10,9,8,7,6,5,4,3,2,1]}
 
-df = pd.DataFrame(data)
+df_strecken = pd.DataFrame(data)
+df_score = pd.DataFrame(score)
 
 # CSV-Datei speichern
-df.to_csv('strecken_cups.csv', index=False)
+df_strecken.to_csv('strecken_cups.csv', index=False)
+df_score.to_csv('scores.csv', index=False)
 
-print(df)
+# print
+print('Stecken:')
+print(df_strecken)
+print('Score:')
+print(df_score)

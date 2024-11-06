@@ -5,17 +5,10 @@ import datetime
 
 # Dateiname für den Datensatz
 DATAFILE = 'data.csv'
-
-# DF Strecken
 df_strecken = pd.read_csv('../Zusatzdaten/strecken_cups.csv')
 streckenauswahl = df_strecken['Strecke'].tolist()
-
-# DF Scores
-df_scores = pd.read_csv('../Zusatzdaten/scores.csv')
-platzierungen_mapping = df_scores.set_index('platz')['punkte'].to_dict()
-
-# Controller
 controller_options = ["Pro", "Plus Rot", "Plus Gelb", "Minus Blau", "Minus Gelb"]
+score_dict = {1:15, }
 
 # Funktion, um den Datensatz zu laden oder zu erstellen
 def load_data():
@@ -102,9 +95,6 @@ def main():
             platzierung_4 = st.number_input("Platzierung 4", min_value=1)
             platzierung = [platzierung_1, platzierung_2, platzierung_3, platzierung_4]
 
-            # Gesamtscore berechnen
-            gesamt_score = sum(platzierungen_mapping[p] for p in platzierung)
-
         # Weitere Eingabefelder
         col2_1, col2_2 = st.columns(2)
 
@@ -117,11 +107,13 @@ def main():
             kiff_count = st.number_input("Kiff Count", min_value=0)
 
         # Weitere Eingabefelder
-        col3_1, col3_2 = st.columns(2)
+        col3_1, col3_2, col3_3 = st.columns(3)
 
         with col3_1:
             rennen_tag = st.number_input("Rennentag", min_value=0)
         with col3_2:
+            gesamt_score = st.number_input("Gesamt Score", min_value=0)
+        with col3_3:
             fehlstarts = st.number_input("Fehlstarts", min_value=0)
 
         if st.button("Daten für Spieler hinzufügen"):
