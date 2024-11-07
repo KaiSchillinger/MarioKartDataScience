@@ -62,24 +62,54 @@ def main():
 
     # Step 2: Namen der Spieler abfragen
     elif st.session_state.step == 2:
-        st.header("Namen der Spieler eingeben")
-        st.session_state.players = []
 
-        for i in range(st.session_state.player_count):
-            player_name = st.text_input(f"Spieler {i + 1} Name")
-            st.session_state.players.append(player_name)
+        # Datum
+        datum = st.date_input("Datum", value=datetime.date.today())
+
+        # Boolean für Beamer (Ja/Nein)
+        beamer = st.checkbox("Beamer")
+        col1, col2, col3, col4, col5 = st.columns(5)
+
+        with col1:
+            st.session_state.players = []
+
+            for i in range(st.session_state.player_count):
+                player_name = st.text_input(f"Spieler {i + 1} Name")
+                st.session_state.players.append(player_name)
+
+        with (col2):
+            st.session_state.drinks = []
+
+            for i in range(st.session_state.player_count):
+                drink_count = st.number_input(f"Drink Count {i +1}", min_value=0)
+                st.session_state.drinks.append(drink_count)
+
+        with col3:
+            st.session_state.kiffs = []
+
+            for i in range(st.session_state.player_count):
+                kiff_count = st.number_input(f"Kiff Count {i +1}", min_value=0)
+                st.session_state.kiffs.append(kiff_count)
+
+        with col4:
+            st.session_state.rennen_nr = []
+
+            for i in range(st.session_state.player_count):
+                rennen_tag = st.number_input(f"Rennentag {i +1}", min_value=0)
+                st.session_state.rennen_nr.append(rennen_tag)
+
+        with col5:
+            st.session_state.controller_list = []
+
+            for i in range(st.session_state.player_count):
+                controller = st.selectbox(f"Controller {i +1}", controller_options)
+                st.session_state.controller_list.append(controller)
 
         if st.button("Weiter zu Dateneingabe"):
             st.session_state.step = 3  # Weiter zu Schritt 3
 
     # Step 3: Dateneingabe für jeden Spieler
     elif st.session_state.step == 3:
-
-        datum = st.date_input("Datum", value=datetime.date.today())
-        controller = st.selectbox("Controller", controller_options)
-
-        # Boolean für Beamer (Ja/Nein)
-        beamer = st.checkbox("Beamer")
 
         # Spalten für Strecken und dynamische Spalten Platzierungen
         cols = st.columns(1 + st.session_state.player_count)
@@ -109,31 +139,15 @@ def main():
                 platzierung_3 = st.number_input(f"Platzierung 3 ({player_name})", min_value=1, max_value=12, step=1)
                 platzierung_4 = st.number_input(f"Platzierung 4 ({player_name})", min_value=1, max_value=12, step=1)
 
+                # Fehlstart Abfrage
+                fehlstarts = st.number_input(f"Fehlstarts({player_name})", min_value=0)
+
                 platzierung_set = [platzierung_1, platzierung_2, platzierung_3, platzierung_4]
                 platzierungen_liste.append(platzierung_set)
 
                 # Gesamtscore für den aktuellen Spieler berechnen
                 gesamt_score = sum(platzierungen_mapping.get(p, 0) for p in platzierung_set)
                 gesamt_scores_liste.append(gesamt_score)
-
-        # Weitere Eingabefelder
-        col2_1, col2_2 = st.columns(2)
-
-        with col2_1:
-            st.subheader("Drinks")
-            drink_count = st.number_input("Drink Count", min_value=0)
-
-        with col2_2:
-            st.subheader("Kiffs")
-            kiff_count = st.number_input("Kiff Count", min_value=0)
-
-        # Weitere Eingabefelder
-        col3_1, col3_2 = st.columns(2)
-
-        with col3_1:
-            rennen_tag = st.number_input("Rennentag", min_value=0)
-        with col3_2:
-            fehlstarts = st.number_input("Fehlstarts", min_value=0)
 
         if st.button("Daten für Spieler hinzufügen"):
             # Neue Daten zur Tabelle hinzufügen
