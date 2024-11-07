@@ -15,7 +15,11 @@ df_scores = pd.read_csv('../Zusatzdaten/scores.csv')
 platzierungen_mapping = df_scores.set_index('platz')['punkte'].to_dict()
 
 # Controller
-controller_options = ["Pro", "Plus Rot", "Plus Gelb", "Minus Blau", "Minus Gelb"]
+controller_options = ["Pro", "Minus Blau", "Plus Rot", "Minus Gelb", "Plus Gelb"]
+
+# Spielernamen auswahl
+namen_auswahl = ['Amine', 'Christof', 'Daniel', 'David', 'Joe', 'Kai', 'Lina', 'Niclas', 'Patrick', 'PKai', 'Robin']
+
 
 # Funktion, um den Datensatz zu laden oder zu erstellen
 def load_data():
@@ -35,6 +39,11 @@ def save_data(data):
 
 # Hauptfunktion der Streamlit-App
 def main():
+    # DataFrame neue Daten
+    new_data = pd.DataFrame(
+        columns=["id", "spieler", "platzierung", "controller", "strecken", "drink_count", "kiff_count",
+                 "datum", "rennen_tag", "gesamt_score", "beamer", "fehlstarts"])
+
     st.title("Statistik Dateneingabe")
 
     # Lade vorhandene Daten
@@ -61,94 +70,122 @@ def main():
 
     # Step 2: Namen der Spieler abfragen
     elif st.session_state.step == 2:
-        st.header("Namen der Spieler eingeben")
-        st.session_state.players = []
 
-        for i in range(st.session_state.player_count):
-            player_name = st.text_input(f"Spieler {i + 1} Name")
-            st.session_state.players.append(player_name)
+        # Datum
+        datum = st.date_input("Datum", value=datetime.date.today())
+
+        # Boolean für Beamer (Ja/Nein)
+        beamer = st.checkbox("Beamer")
+        col1, col2, col3, col4, col5 = st.columns(5)
+
+        st.session_state.player_data = []  # Liste zurücksetzen
+
+        with col1:
+            st.session_state.players = []
+
+            for i in range(st.session_state.player_count):
+                player_name = st.selectbox(f"Spieler {i + 1} Name", namen_auswahl)
+                st.session_state.players.append(player_name)
+
+        with (col2):
+            st.session_state.drinks = []
+
+            for i in range(st.session_state.player_count):
+                drink_count = st.number_input(f"Drink Count SP {i +1}", min_value=0)
+                st.session_state.drinks.append(drink_count)
+
+        with col3:
+            st.session_state.kiffs = []
+
+            for i in range(st.session_state.player_count):
+                kiff_count = st.number_input(f"Kiff Count SP {i +1}", min_value=0)
+                st.session_state.kiffs.append(kiff_count)
+
+        with col4:
+            st.session_state.rennen_nr = []
+
+            for i in range(st.session_state.player_count):
+                rennen_tag = st.number_input(f"Rennentag SP {i +1}", min_value=0)
+                st.session_state.rennen_nr.append(rennen_tag)
+
+        with col5:
+            st.session_state.controller_list = []
+
+            for i in range(st.session_state.player_count):
+                controller = st.selectbox(f"Controller SP {i +1}", controller_options)
+                st.session_state.controller_list.append(controller)
 
         if st.button("Weiter zu Dateneingabe"):
+
+            # Speichere Grunddaten für jeden Spieler
+            for i in range(st.session_state.player_count):
+                st.session_state.player_data.append({
+                    "id": next_id + i,
+                    "spieler": st.session_state.players[i],
+                    "drink_count": st.session_state.drinks[i],
+                    "kiff_count": st.session_state.kiffs[i],
+                    "rennen_tag": st.session_state.rennen_nr[i],
+                    "controller": st.session_state.controller_list[i],
+                    "datum": datum,
+                    "beamer": beamer,
+                })
+
             st.session_state.step = 3  # Weiter zu Schritt 3
 
     # Step 3: Dateneingabe für jeden Spieler
     elif st.session_state.step == 3:
-        current_player = st.session_state.players[st.session_state.current_player_index]
-        st.header(f"Daten für Spieler: {current_player}")
 
-        datum = st.date_input("Datum", value=datetime.date.today())
-        controller = st.selectbox("Controller", controller_options)
+        # Spalten für Strecken und dynamische Spalten Platzierungen
+        cols = st.columns(1 + st.session_state.player_count)
 
-        # Boolean für Beamer (Ja/Nein)
-        beamer = st.checkbox("Beamer")
+        # Streckenauswahl in der ersten Spalte
+        with cols[0]:
+            st.subheader("Strecke")
+            strecken = [st.selectbox(f"Strecke {i + 1}", streckenauswahl, index=i) for i in range(4)]
 
-        # Zwei Spalten für Platzierungen und Strecken nebeneinander
-        col1_1, col1_2 = st.columns(2)
+        platzierungen_liste = []  # Liste zum Speichern aller Platzierungen
+        gesamt_scores_liste = []  # Liste zum Speichern der Scores für jedes Platzierung-Set
 
-        with col1_1:
-            st.subheader("Strecken")
-            strecken_options = streckenauswahl
-            strecke_1 = st.selectbox("Strecke 1", strecken_options)
-            strecke_2 = st.selectbox("Strecke 2", strecken_options, index=1)
-            strecke_3 = st.selectbox("Strecke 3", strecken_options, index=2)
-            strecke_4 = st.selectbox("Strecke 4", strecken_options, index=3)
-            strecken = [strecke_1, strecke_2, strecke_3, strecke_4]
+        # Spalten für Platzierungen erstellen und Spielernamen als Überschriften setzen
+        for idx, col in enumerate(cols[1:]):  # Ab cols[1] beginnen, da cols[0] für Strecken reserviert ist
+            player_name = st.session_state.players[idx] if idx < len(st.session_state.players) else f"Spieler {idx + 1}"
 
-        with col1_2:
-            st.subheader("Platzierungen")
-            platzierung_1 = st.number_input("Platzierung 1", min_value=1, max_value=12, step=1)
-            platzierung_2 = st.number_input("Platzierung 2", min_value=1, max_value=12, step=1)
-            platzierung_3 = st.number_input("Platzierung 3", min_value=1, max_value=12, step=1)
-            platzierung_4 = st.number_input("Platzierung 4", min_value=1, max_value=12, step=1)
-            platzierung = [platzierung_1, platzierung_2, platzierung_3, platzierung_4]
+            with col:
+                st.subheader(player_name)
+                platzierungen = [st.number_input(f"Platzierung {j + 1} ({player_name})",
+                                                 min_value=1, max_value=12, step=1) for j in range(4)]
+                fehlstarts = st.number_input(f"Fehlstarts ({player_name})", min_value=0)
 
-            # Gesamtscore berechnen
-            gesamt_score = sum(platzierungen_mapping[p] for p in platzierung)
+                # Gesamtscore berechnen und Platzierungen hinzufügen
+                gesamt_score = sum(platzierungen_mapping.get(p, 0) for p in platzierungen)
+                gesamt_scores_liste.append(gesamt_score)
+                platzierungen_liste.append(platzierungen)
 
-        # Weitere Eingabefelder
-        col2_1, col2_2 = st.columns(2)
-
-        with col2_1:
-            st.subheader("Drinks")
-            drink_count = st.number_input("Drink Count", min_value=0)
-
-        with col2_2:
-            st.subheader("Kiffs")
-            kiff_count = st.number_input("Kiff Count", min_value=0)
-
-        # Weitere Eingabefelder
-        col3_1, col3_2 = st.columns(2)
-
-        with col3_1:
-            rennen_tag = st.number_input("Rennentag", min_value=0)
-        with col3_2:
-            fehlstarts = st.number_input("Fehlstarts", min_value=0)
+                # Spieler-Daten aktualisieren
+                st.session_state.player_data[idx].update({
+                    "strecken": strecken,
+                    "platzierung": platzierungen,
+                    "gesamt_score": gesamt_score,
+                    "fehlstarts": fehlstarts
+                })
 
         if st.button("Daten für Spieler hinzufügen"):
             # Neue Daten zur Tabelle hinzufügen
-            new_data = pd.DataFrame([[next_id, current_player, platzierung, controller, strecken,
-                                      drink_count, kiff_count, datum, rennen_tag,
-                                      gesamt_score, beamer, fehlstarts]],
-                                    columns=["id", "spieler", "platzierung", "controller",
-                                             "strecken", "drink_count", "kiff_count",
-                                             "datum", "rennen_tag", "gesamt_score",
-                                             "beamer", "fehlstarts"])
-            data = pd.concat([data, new_data], ignore_index=True)
-            save_data(data)
-            st.success(f"Daten für {current_player} hinzugefügt!")
+            player_data_frames = []  # Liste, um alle Player-DataFrames zwischenzuspeichern
 
-            # Zum nächsten Spieler wechseln oder zurück zum Start
-            st.session_state.current_player_index += 1
-            if st.session_state.current_player_index >= st.session_state.player_count:
-                st.session_state.step = 1  # Zurück zu Schritt 1
-                st.session_state.current_player_index = 0
-                st.session_state.players = []  # Spieler-Liste zurücksetzen
-            else:
-                next_id += 1  # Nächste ID für den neuen Eintrag erhöhen
+            for player_data in st.session_state.player_data:
+                player_data_frames.append(pd.DataFrame([player_data]))  # Jeden Spieler als DataFrame hinzufügen
 
-    # Anzeigen der aktuellen Daten
-    st.header("Aktuelle Daten")
-    st.dataframe(data)
+            # Alle DataFrames zu einem großen DataFrame zusammenfügen
+            new_data = pd.concat([data] + player_data_frames, ignore_index=True)
+
+            # Speichern und anzeigen
+            save_data(new_data)
+            st.write("Daten gespeichert!")
+            st.write(new_data)
+
+            # Schritt zurücksetzen
+            st.session_state.step = 1
 
 
 if __name__ == "__main__":
