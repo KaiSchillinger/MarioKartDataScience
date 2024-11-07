@@ -4,15 +4,23 @@ import os
 import datetime
 
 # Dateiname für den Datensatz
-DATAFILE = 'data.csv'
+datafile = '../CSV_DATA/data.csv'
 
 # DF Strecken
-df_strecken = pd.read_csv('../Zusatzdaten/strecken_cups.csv')
-streckenauswahl = df_strecken['Strecke'].tolist()
+try:
+    df_strecken = pd.read_csv('../../Zusatzdaten/strecken_cups.csv')
+    streckenauswahl = df_strecken['Strecke'].tolist()
+except FileNotFoundError:
+    st.error("Die Datei 'strecken_cups.csv' wurde nicht gefunden.")
+    streckenauswahl = []
 
 # DF Scores
-df_scores = pd.read_csv('../Zusatzdaten/scores.csv')
-platzierungen_mapping = df_scores.set_index('platz')['punkte'].to_dict()
+try:
+    df_scores = pd.read_csv('../../Zusatzdaten/scores.csv')
+    platzierungen_mapping = df_scores.set_index('platz')['punkte'].to_dict()
+except FileNotFoundError:
+    st.error("Die Datei 'scores.csv' wurde nicht gefunden.")
+    platzierungen_mapping = {}
 
 # Controller
 controller_options = ["Pro", "Minus Blau", "Plus Rot", "Minus Gelb", "Plus Gelb"]
@@ -23,8 +31,8 @@ namen_auswahl = ['Amine', 'Christof', 'Daniel', 'David', 'Joe', 'Kai', 'Lina', '
 
 # Funktion, um den Datensatz zu laden oder zu erstellen
 def load_data():
-    if os.path.exists(DATAFILE):
-        return pd.read_csv(DATAFILE)
+    if os.path.exists(datafile):
+        return pd.read_csv(datafile)
     else:
         # Leerer DataFrame mit den angegebenen Spalten
         return pd.DataFrame(columns=["id", "spieler", "platzierung", "controller", "strecken",
@@ -34,7 +42,7 @@ def load_data():
 
 # Funktion, um den Datensatz zu speichern
 def save_data(data):
-    data.to_csv(DATAFILE, index=False)
+    data.to_csv(datafile, index=False)
 
 
 # Hauptfunktion der Streamlit-App

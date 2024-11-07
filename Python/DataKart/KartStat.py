@@ -4,28 +4,35 @@ import os
 import datetime
 
 # Dateiname für den Datensatz
-DATAFILE = 'data.csv'
-ZIELFILE = 'data_test.csv'
+datafile = '../CSV_DATA/data.csv'
 
 # DF Strecken
-df_strecken = pd.read_csv('../Zusatzdaten/strecken_cups.csv')
-streckenauswahl = df_strecken['Strecke'].tolist()
+try:
+    df_strecken = pd.read_csv('../../Zusatzdaten/strecken_cups.csv').sort_values('Strecke')
+    streckenauswahl = df_strecken['Strecke'].tolist()
+except FileNotFoundError:
+    st.error("Die Datei 'strecken_cups.csv' wurde nicht gefunden.")
+    streckenauswahl = []
 
 # DF Scores
-df_scores = pd.read_csv('../Zusatzdaten/scores.csv')
-platzierungen_mapping = df_scores.set_index('platz')['punkte'].to_dict()
+try:
+    df_scores = pd.read_csv('../../Zusatzdaten/scores.csv')
+    platzierungen_mapping = df_scores.set_index('platz')['punkte'].to_dict()
+except FileNotFoundError:
+    st.error("Die Datei 'scores.csv' wurde nicht gefunden.")
+    platzierungen_mapping = {}
 
 # Controller
 controller_options = ["Pro", "Minus Blau", "Plus Rot", "Minus Gelb", "Plus Gelb"]
 
 # Spielernamen auswahl
-namen_auswahl = ['Amine', 'Christof', 'Daniel', 'David', 'Joe', 'Kai', 'Lina', 'Niclas', 'Patrick', 'PKai', 'Robin']
+namen_auswahl = ['Daniel', 'Kai', 'Niclas', 'Amine', 'Christof', 'David', 'Joe', 'Lina', 'Patrick', 'PKai', 'Robin']
 
 
 # Funktion, um den Datensatz zu laden oder zu erstellen
 def load_data():
-    if os.path.exists(DATAFILE):
-        return pd.read_csv(DATAFILE)
+    if os.path.exists(datafile):
+        return pd.read_csv(datafile)
     else:
         # Leerer DataFrame mit den angegebenen Spalten
         return pd.DataFrame(columns=["id", "spieler", "platzierung", "controller", "strecken",
@@ -35,7 +42,7 @@ def load_data():
 
 # Funktion, um den Datensatz zu speichern
 def save_data(data):
-    data.to_csv(ZIELFILE, index=False)
+    data.to_csv(datafile, index=False)
 
 
 # Hauptfunktion der Streamlit-App
@@ -85,7 +92,7 @@ def main():
             st.session_state.players = []
 
             for i in range(st.session_state.player_count):
-                player_name = st.selectbox(f"Spieler {i + 1} Name", namen_auswahl)
+                player_name = st.selectbox(f"Spieler {i + 1} Name", namen_auswahl, index=i)
                 st.session_state.players.append(player_name)
 
         with (col2):
@@ -106,7 +113,7 @@ def main():
             st.session_state.rennen_nr = []
 
             for i in range(st.session_state.player_count):
-                rennen_tag = st.number_input(f"Rennentag SP {i +1}", min_value=0)
+                rennen_tag = st.number_input(f"RennenNr. SP {i +1}", min_value=0)
                 st.session_state.rennen_nr.append(rennen_tag)
 
         with col5:
@@ -116,7 +123,7 @@ def main():
                 controller = st.selectbox(f"Controller SP {i +1}", controller_options)
                 st.session_state.controller_list.append(controller)
 
-        if st.button("Weiter zu Dateneingabe"):
+        if st.button("Weiter"):
 
             # Speichere Grunddaten für jeden Spieler
             for i in range(st.session_state.player_count):
@@ -170,7 +177,7 @@ def main():
                     "fehlstarts": fehlstarts
                 })
 
-        if st.button("Daten für Spieler hinzufügen"):
+        if st.button("Daten speichern!"):
             # Neue Daten zur Tabelle hinzufügen
             player_data_frames = []  # Liste, um alle Player-DataFrames zwischenzuspeichern
 
