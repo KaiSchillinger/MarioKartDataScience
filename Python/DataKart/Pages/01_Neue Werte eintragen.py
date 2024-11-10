@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
-from main import load_data, save_data, streckenauswahl, platzierungen_mapping, controller_options, namen_auswahl
+from DataKart import load_data, save_data, streckenauswahl, platzierungen_mapping, controller_options, namen_auswahl
 
 # Hauptfunktion der Streamlit-App
 

@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 
+
 # Dateiname für den Datensatz
 datafile = '../CSV_DATA/data.csv'
 
