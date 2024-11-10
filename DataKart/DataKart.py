@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-
+import matplotlib.pyplot as plt
 
 # Dateiname für den Datensatz
 datafile = '../CSV_DATA/data.csv'
@@ -24,6 +24,12 @@ def save_data(data):
     data.to_csv(datafile, index=False)
 
 
+# Generiere eine Liste von Farben für jedes Balkendiagramm
+def farben(anzahl):
+    colors = plt.cm.get_cmap('tab20', anzahl)
+    color_list = [colors(i) for i in range(anzahl)]
+    return color_list
+
 # DF Strecken
 try:
     df_strecken = pd.read_csv('../Zusatzdaten/strecken_cups.csv').sort_values('Strecke')
@@ -45,6 +51,3 @@ controller_options = ["Pro", "Minus Blau", "Plus Rot", "Minus Gelb", "Plus Gelb"
 
 # Spielernamen auswahl
 namen_auswahl = ['Daniel', 'Kai', 'Niclas', 'Amine', 'Christof', 'David', 'Joe', 'Lina', 'Patrick', 'PKai', 'Robin']
-
-st.title('MarioKart')
-st.write('Willkommen')

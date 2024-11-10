@@ -3,4 +3,3 @@ authlib
 python-dotenv  # nur falls benötigt, ggf. weitere Libraries
 pandas
 matplotlib
-os

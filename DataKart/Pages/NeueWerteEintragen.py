@@ -3,14 +3,11 @@ import pandas as pd
 import datetime
 from DataKart import load_data, save_data, streckenauswahl, platzierungen_mapping, controller_options, namen_auswahl
 
-# Hauptfunktion der Streamlit-App
 
 # DataFrame neue Daten
 new_data = pd.DataFrame(
     columns=["id", "spieler", "platzierung", "controller", "strecken", "drink_count", "kiff_count",
              "datum", "rennen_tag", "gesamt_score", "beamer", "fehlstarts"])
-
-st.title("Statistik Dateneingabe")
 
 # Lade vorhandene Daten
 data = load_data()
