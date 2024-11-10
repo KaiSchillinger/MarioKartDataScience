@@ -2,11 +2,9 @@ import streamlit as st
 from authlib.integrations.requests_client import OAuth2Session
 
 # Okta-Daten konfigurieren
-client_id = "OKTA_CLIENT_ID"
-client_secret = "OKTA_CLIENT_SECRET"
-authorization_base_url = "https://{yourOktaDomain}/oauth2/default/v1/authorize"
-token_url = "https://{yourOktaDomain}/oauth2/default/v1/token"
-redirect_uri = "http://localhost:8501"
+client_id = st.secrets["OKTA_CLIENT_ID"]
+client_secret = st.secrets["OKTA_CLIENT_SECRET"]
+okta_domain = st.secrets["OKTA_DOMAIN"]
 
 # OAuth2-Session starten
 oauth = OAuth2Session(client_id, client_secret, redirect_uri=redirect_uri)

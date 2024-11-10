@@ -26,7 +26,7 @@ def save_data(data):
 
 # DF Strecken
 try:
-    df_strecken = pd.read_csv('../../Zusatzdaten/strecken_cups.csv').sort_values('Strecke')
+    df_strecken = pd.read_csv('../Zusatzdaten/strecken_cups.csv').sort_values('Strecke')
     streckenauswahl = df_strecken['Strecke'].tolist()
 except FileNotFoundError:
     st.error("Die Datei 'strecken_cups.csv' wurde nicht gefunden.")
@@ -34,7 +34,7 @@ except FileNotFoundError:
 
 # DF Scores
 try:
-    df_scores = pd.read_csv('../../Zusatzdaten/scores.csv')
+    df_scores = pd.read_csv('../Zusatzdaten/scores.csv')
     platzierungen_mapping = df_scores.set_index('platz')['punkte'].to_dict()
 except FileNotFoundError:
     st.error("Die Datei 'scores.csv' wurde nicht gefunden.")
