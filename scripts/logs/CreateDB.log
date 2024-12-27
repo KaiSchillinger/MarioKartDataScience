@@ -1,0 +1,408 @@
+2024-12-27 13:23:29,485 - INFO - BEGIN (implicit)
+2024-12-27 13:23:29,485 - INFO - PRAGMA main.table_info("scores")
+2024-12-27 13:23:29,485 - INFO - [raw sql] ()
+2024-12-27 13:23:29,487 - INFO - PRAGMA main.table_info("tracks")
+2024-12-27 13:23:29,487 - INFO - [raw sql] ()
+2024-12-27 13:23:29,487 - INFO - PRAGMA main.table_info("user")
+2024-12-27 13:23:29,487 - INFO - [raw sql] ()
+2024-12-27 13:23:29,487 - INFO - PRAGMA main.table_info("controller")
+2024-12-27 13:23:29,488 - INFO - [raw sql] ()
+2024-12-27 13:23:29,488 - INFO - PRAGMA main.table_info("game_place")
+2024-12-27 13:23:29,488 - INFO - [raw sql] ()
+2024-12-27 13:23:29,488 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-27 13:23:29,488 - INFO - [raw sql] ()
+2024-12-27 13:23:29,489 - INFO - PRAGMA main.table_info("data")
+2024-12-27 13:23:29,489 - INFO - [raw sql] ()
+2024-12-27 13:23:29,489 - INFO - COMMIT
+2024-12-27 13:23:29,503 - INFO - BEGIN (implicit)
+2024-12-27 13:23:29,505 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:23:29,505 - INFO - [generated in 0.00009s (insertmanyvalues) 1/12 (ordered; batch not supported)] (1, 15)
+2024-12-27 13:23:29,505 - INFO - ROLLBACK
+2024-12-27 13:23:29,505 - ERROR - Fehler befüllen der Spalte der Datenbank: (sqlite3.IntegrityError) UNIQUE constraint failed: scores.place
+[SQL: INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at]
+[parameters: (1, 15)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-12-27 13:25:21,537 - INFO - BEGIN (implicit)
+2024-12-27 13:25:21,537 - INFO - PRAGMA main.table_info("scores")
+2024-12-27 13:25:21,537 - INFO - [raw sql] ()
+2024-12-27 13:25:21,539 - INFO - PRAGMA temp.table_info("scores")
+2024-12-27 13:25:21,539 - INFO - [raw sql] ()
+2024-12-27 13:25:21,539 - INFO - PRAGMA main.table_info("tracks")
+2024-12-27 13:25:21,540 - INFO - [raw sql] ()
+2024-12-27 13:25:21,540 - INFO - PRAGMA temp.table_info("tracks")
+2024-12-27 13:25:21,540 - INFO - [raw sql] ()
+2024-12-27 13:25:21,540 - INFO - PRAGMA main.table_info("user")
+2024-12-27 13:25:21,540 - INFO - [raw sql] ()
+2024-12-27 13:25:21,540 - INFO - PRAGMA temp.table_info("user")
+2024-12-27 13:25:21,540 - INFO - [raw sql] ()
+2024-12-27 13:25:21,541 - INFO - PRAGMA main.table_info("controller")
+2024-12-27 13:25:21,541 - INFO - [raw sql] ()
+2024-12-27 13:25:21,541 - INFO - PRAGMA temp.table_info("controller")
+2024-12-27 13:25:21,541 - INFO - [raw sql] ()
+2024-12-27 13:25:21,541 - INFO - PRAGMA main.table_info("game_place")
+2024-12-27 13:25:21,541 - INFO - [raw sql] ()
+2024-12-27 13:25:21,541 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-27 13:25:21,541 - INFO - [raw sql] ()
+2024-12-27 13:25:21,542 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-27 13:25:21,542 - INFO - [raw sql] ()
+2024-12-27 13:25:21,542 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-27 13:25:21,542 - INFO - [raw sql] ()
+2024-12-27 13:25:21,542 - INFO - PRAGMA main.table_info("data")
+2024-12-27 13:25:21,542 - INFO - [raw sql] ()
+2024-12-27 13:25:21,542 - INFO - PRAGMA temp.table_info("data")
+2024-12-27 13:25:21,543 - INFO - [raw sql] ()
+2024-12-27 13:25:21,543 - INFO - 
+CREATE TABLE scores (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-27 13:25:21,543 - INFO - [no key 0.00015s] ()
+2024-12-27 13:25:21,549 - INFO - 
+CREATE TABLE tracks (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-27 13:25:21,549 - INFO - [no key 0.00018s] ()
+2024-12-27 13:25:21,552 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+2024-12-27 13:25:21,552 - INFO - [no key 0.00016s] ()
+2024-12-27 13:25:21,555 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-27 13:25:21,555 - INFO - [no key 0.00017s] ()
+2024-12-27 13:25:21,559 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-27 13:25:21,559 - INFO - [no key 0.00013s] ()
+2024-12-27 13:25:21,562 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-27 13:25:21,562 - INFO - [no key 0.00013s] ()
+2024-12-27 13:25:21,566 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-27 13:25:21,566 - INFO - [no key 0.00015s] ()
+2024-12-27 13:25:21,569 - INFO - COMMIT
+2024-12-27 13:25:21,588 - INFO - BEGIN (implicit)
+2024-12-27 13:25:21,589 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,590 - INFO - [generated in 0.00012s (insertmanyvalues) 1/12 (ordered; batch not supported)] (1, 15)
+2024-12-27 13:25:21,590 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,591 - INFO - [insertmanyvalues 2/12 (ordered; batch not supported)] (2, 12)
+2024-12-27 13:25:21,591 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,591 - INFO - [insertmanyvalues 3/12 (ordered; batch not supported)] (3, 10)
+2024-12-27 13:25:21,591 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,591 - INFO - [insertmanyvalues 4/12 (ordered; batch not supported)] (4, 9)
+2024-12-27 13:25:21,591 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,591 - INFO - [insertmanyvalues 5/12 (ordered; batch not supported)] (5, 8)
+2024-12-27 13:25:21,591 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,591 - INFO - [insertmanyvalues 6/12 (ordered; batch not supported)] (6, 7)
+2024-12-27 13:25:21,592 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,592 - INFO - [insertmanyvalues 7/12 (ordered; batch not supported)] (7, 6)
+2024-12-27 13:25:21,592 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,592 - INFO - [insertmanyvalues 8/12 (ordered; batch not supported)] (8, 5)
+2024-12-27 13:25:21,592 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,592 - INFO - [insertmanyvalues 9/12 (ordered; batch not supported)] (9, 4)
+2024-12-27 13:25:21,592 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,592 - INFO - [insertmanyvalues 10/12 (ordered; batch not supported)] (10, 3)
+2024-12-27 13:25:21,592 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,592 - INFO - [insertmanyvalues 11/12 (ordered; batch not supported)] (11, 2)
+2024-12-27 13:25:21,592 - INFO - INSERT INTO scores (place, points) VALUES (?, ?) RETURNING place, created_at
+2024-12-27 13:25:21,593 - INFO - [insertmanyvalues 12/12 (ordered; batch not supported)] (12, 1)
+2024-12-27 13:25:21,593 - INFO - COMMIT
+2024-12-27 13:25:21,604 - INFO - BEGIN (implicit)
+2024-12-27 13:25:21,606 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,606 - INFO - [generated in 0.00030s (insertmanyvalues) 1/96 (ordered; batch not supported)] ('Pilz', 'Mushroom', 'Mario Kart-Stadion', 'Mario Kart Stadium', 'Switch')
+2024-12-27 13:25:21,607 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,607 - INFO - [insertmanyvalues 2/96 (ordered; batch not supported)] ('Pilz', 'Mushroom', 'Wasserpark', 'Water Park', 'Switch')
+2024-12-27 13:25:21,607 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,607 - INFO - [insertmanyvalues 3/96 (ordered; batch not supported)] ('Pilz', 'Mushroom', 'Zuckersüßer Canyon', 'Sweet Sweet Canyon', 'Switch')
+2024-12-27 13:25:21,607 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,608 - INFO - [insertmanyvalues 4/96 (ordered; batch not supported)] ('Pilz', 'Mushroom', 'Steinblock-Ruinen', 'Thwomp Ruins', 'Switch')
+2024-12-27 13:25:21,608 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,608 - INFO - [insertmanyvalues 5/96 (ordered; batch not supported)] ('Blumen', 'Flower', 'Marios Piste', 'Mario Circuit(Switch)', 'Switch')
+2024-12-27 13:25:21,608 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,608 - INFO - [insertmanyvalues 6/96 (ordered; batch not supported)] ('Blumen', 'Flower', 'Toads Hafenstadt', 'Toad Harbor', 'Switch')
+2024-12-27 13:25:21,608 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,608 - INFO - [insertmanyvalues 7/96 (ordered; batch not supported)] ('Blumen', 'Flower', 'Gruselwusel-Villa', 'Twisted Mansion', 'Switch')
+2024-12-27 13:25:21,608 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,608 - INFO - [insertmanyvalues 8/96 (ordered; batch not supported)] ('Blumen', 'Flower', 'Shy Guys Wasserfälle', 'Shy Guy Falls', 'Switch')
+2024-12-27 13:25:21,608 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,608 - INFO - [insertmanyvalues 9/96 (ordered; batch not supported)] ('Stern', 'Star', 'Sonnenflughafen', 'Sunshine Airport', 'Switch')
+2024-12-27 13:25:21,609 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,609 - INFO - [insertmanyvalues 10/96 (ordered; batch not supported)] ('Stern', 'Star', 'Delfinlagune', 'Dolphin Shoals', 'Switch')
+2024-12-27 13:25:21,609 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,609 - INFO - [insertmanyvalues 11/96 (ordered; batch not supported)] ('Stern', 'Star', 'Discodrom', 'Electrodrome', 'Switch')
+2024-12-27 13:25:21,609 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,610 - INFO - [insertmanyvalues 12/96 (ordered; batch not supported)] ('Stern', 'Star', 'Wario-Abfahrt', 'Mount Wario', 'Switch')
+2024-12-27 13:25:21,610 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,610 - INFO - [insertmanyvalues 13/96 (ordered; batch not supported)] ('Spezial', 'Special', 'Wolkenstraße', 'Cloudtop Cruise', 'Switch')
+2024-12-27 13:25:21,610 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,610 - INFO - [insertmanyvalues 14/96 (ordered; batch not supported)] ('Spezial', 'Special', 'Knochentrockene Dünen', 'Bone Dry Dunes', 'Switch')
+2024-12-27 13:25:21,610 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,610 - INFO - [insertmanyvalues 15/96 (ordered; batch not supported)] ('Spezial', 'Special', 'Bowsers Castle', "Bowser's Castle", 'Switch')
+2024-12-27 13:25:21,610 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,610 - INFO - [insertmanyvalues 16/96 (ordered; batch not supported)] ('Spezial', 'Special', 'Regenbogen-Boulevard(8)', 'Rainbow Road(8)', 'Switch')
+2024-12-27 13:25:21,611 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,611 - INFO - [insertmanyvalues 17/96 (ordered; batch not supported)] ('Ei', 'Egg', 'Yoshis Piste', 'Yoshi Circuit', 'GCN')
+2024-12-27 13:25:21,611 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,611 - INFO - [insertmanyvalues 18/96 (ordered; batch not supported)] ('Ei', 'Egg', 'Excitebike-Stadion', 'Excitebike Arena', 'Switch')
+2024-12-27 13:25:21,611 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,611 - INFO - [insertmanyvalues 19/96 (ordered; batch not supported)] ('Ei', 'Egg', 'Große Drachenmauer', 'Dragon Driftway', 'Switch')
+2024-12-27 13:25:21,611 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,611 - INFO - [insertmanyvalues 20/96 (ordered; batch not supported)] ('Ei', 'Egg', 'Mute City', 'Mute City', 'Switch')
+2024-12-27 13:25:21,611 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,611 - INFO - [insertmanyvalues 21/96 (ordered; batch not supported)] ('Crossing', 'Crossing', 'Baby-Park', 'Baby Park', 'GCN')
+2024-12-27 13:25:21,612 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,612 - INFO - [insertmanyvalues 22/96 (ordered; batch not supported)] ('Crossing', 'Crossing', 'Käseland', 'Cheese Land', 'GBA')
+2024-12-27 13:25:21,612 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,612 - INFO - [insertmanyvalues 23/96 (ordered; batch not supported)] ('Crossing', 'Crossing', 'Wilder Wipfelweg', 'Wild Woods', 'Switch')
+2024-12-27 13:25:21,612 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,612 - INFO - [insertmanyvalues 24/96 (ordered; batch not supported)] ('Crossing', 'Crossing', 'Animal Crossing-Dorf', 'Animal Crossing', 'Switch')
+2024-12-27 13:25:21,612 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,612 - INFO - [insertmanyvalues 25/96 (ordered; batch not supported)] ('Panzer', 'Shell', 'Kuhmuh-Weide', 'Moo Moo Meadows', 'Wii')
+2024-12-27 13:25:21,612 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,612 - INFO - [insertmanyvalues 26/96 (ordered; batch not supported)] ('Panzer', 'Shell', 'Marios Piste', 'Mario Circuit', 'GBA')
+2024-12-27 13:25:21,613 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,613 - INFO - [insertmanyvalues 27/96 (ordered; batch not supported)] ('Panzer', 'Shell', 'Cheep-Cheep-Strand', 'Cheep Cheep Beach', 'DS')
+2024-12-27 13:25:21,613 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,613 - INFO - [insertmanyvalues 28/96 (ordered; batch not supported)] ('Panzer', 'Shell', 'Toads Autobahn', "Toad's Turnpike", 'N64')
+2024-12-27 13:25:21,613 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,613 - INFO - [insertmanyvalues 29/96 (ordered; batch not supported)] ('Bananen', 'Banana', 'Staubtrockene Wüste', 'Dry Dry Desert', 'GCN')
+2024-12-27 13:25:21,613 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,613 - INFO - [insertmanyvalues 30/96 (ordered; batch not supported)] ('Bananen', 'Banana', 'Donut-Ebene 3', 'Donut Plains 3', 'SNES')
+2024-12-27 13:25:21,613 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,614 - INFO - [insertmanyvalues 31/96 (ordered; batch not supported)] ('Bananen', 'Banana', 'Königliche rennpiste', 'Royal Raceway', 'N64')
+2024-12-27 13:25:21,614 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,614 - INFO - [insertmanyvalues 32/96 (ordered; batch not supported)] ('Bananen', 'Banana', 'DK Dschungel', 'DK Jungle', '3DS')
+2024-12-27 13:25:21,614 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,614 - INFO - [insertmanyvalues 33/96 (ordered; batch not supported)] ('Blatt', 'Leaf', 'Wario-Arena', 'Wario Stadium', 'DS')
+2024-12-27 13:25:21,614 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,614 - INFO - [insertmanyvalues 34/96 (ordered; batch not supported)] ('Blatt', 'Leaf', 'Sorbet-Land', 'Sherbet Land', 'GCN')
+2024-12-27 13:25:21,614 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,614 - INFO - [insertmanyvalues 35/96 (ordered; batch not supported)] ('Blatt', 'Leaf', 'Instrumentalpiste', 'Melody Motorway', '3DS')
+2024-12-27 13:25:21,615 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,615 - INFO - [insertmanyvalues 36/96 (ordered; batch not supported)] ('Blatt', 'Leaf', 'Yoshi-Tal', 'Yoshi Valley', 'N64')
+2024-12-27 13:25:21,615 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,615 - INFO - [insertmanyvalues 37/96 (ordered; batch not supported)] ('Blitz', 'Lightning', 'Ticktack-Trauma', 'Tick-Tock Clock', 'DS')
+2024-12-27 13:25:21,615 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,615 - INFO - [insertmanyvalues 38/96 (ordered; batch not supported)] ('Blitz', 'Lightning', 'Röhrenraserei', 'Piranha Plant Pipeway', '3DS')
+2024-12-27 13:25:21,615 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,615 - INFO - [insertmanyvalues 39/96 (ordered; batch not supported)] ('Blitz', 'Lightning', 'Vulkangrollen', 'Grumble Volcano', 'Wii')
+2024-12-27 13:25:21,615 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,616 - INFO - [insertmanyvalues 40/96 (ordered; batch not supported)] ('Blitz', 'Lightning', 'Regenbogen-Boulevard(N64)', 'Rainbow Road(N64)', 'N64')
+2024-12-27 13:25:21,616 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,616 - INFO - [insertmanyvalues 41/96 (ordered; batch not supported)] ('Triforce', 'Triforce', 'Warios Goldmine', "Wario's Gold Mine", 'Wii')
+2024-12-27 13:25:21,616 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,616 - INFO - [insertmanyvalues 42/96 (ordered; batch not supported)] ('Triforce', 'Triforce', 'Regenbogen-Boulevard (SNES)', 'Rainbow Road(SNES)', 'SNES')
+2024-12-27 13:25:21,616 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,616 - INFO - [insertmanyvalues 43/96 (ordered; batch not supported)] ('Triforce', 'Triforce', 'Polarkreis-Parcours', 'Ice Ice Outpost', 'Switch')
+2024-12-27 13:25:21,616 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,616 - INFO - [insertmanyvalues 44/96 (ordered; batch not supported)] ('Triforce', 'Triforce', 'Hyrule-Piste', 'Hyrule Circuit', 'Switch')
+2024-12-27 13:25:21,616 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,616 - INFO - [insertmanyvalues 45/96 (ordered; batch not supported)] ('Glocken', 'Bell', 'Koopa-Großstadtfieber', 'Koopa City', '3DS')
+2024-12-27 13:25:21,617 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,617 - INFO - [insertmanyvalues 46/96 (ordered; batch not supported)] ('Glocken', 'Bell', 'Party-Straße', 'Ribbon Road', 'GBA')
+2024-12-27 13:25:21,617 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,617 - INFO - [insertmanyvalues 47/96 (ordered; batch not supported)] ('Glocken', 'Bell', 'Marios Metro', 'Super Bell Subway', 'Switch')
+2024-12-27 13:25:21,617 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,617 - INFO - [insertmanyvalues 48/96 (ordered; batch not supported)] ('Glocken', 'Bell', 'Big Blue', 'Big Blue', 'Switch')
+2024-12-27 13:25:21,617 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,617 - INFO - [insertmanyvalues 49/96 (ordered; batch not supported)] ('Goldener Turbo', 'Golden Dash', 'Paris-Parcours', 'Paris Promenade', 'Tour')
+2024-12-27 13:25:21,617 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,617 - INFO - [insertmanyvalues 50/96 (ordered; batch not supported)] ('Goldener Turbo', 'Golden Dash', 'Toads-Piste', 'Toad Circuit', '3DS')
+2024-12-27 13:25:21,617 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,617 - INFO - [insertmanyvalues 51/96 (ordered; batch not supported)] ('Goldener Turbo', 'Golden Dash', 'Schoko-Sumpf', 'Choco Mountain', 'N64')
+2024-12-27 13:25:21,617 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,617 - INFO - [insertmanyvalues 52/96 (ordered; batch not supported)] ('Goldener Turbo', 'Golden Dash', 'Kokos-Promenade', 'Coconut Mall', 'Wii')
+2024-12-27 13:25:21,618 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,618 - INFO - [insertmanyvalues 53/96 (ordered; batch not supported)] ('Glückskatzen', 'Lucky Cat', 'Tokyo-Tempotour', 'Tokyo Blur', 'Tour')
+2024-12-27 13:25:21,618 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,618 - INFO - [insertmanyvalues 54/96 (ordered; batch not supported)] ('Glückskatzen', 'Lucky Cat', 'Pilz-Pass', 'Shroom Ridge', 'DS')
+2024-12-27 13:25:21,619 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,619 - INFO - [insertmanyvalues 55/96 (ordered; batch not supported)] ('Glückskatzen', 'Lucky Cat', 'Wolkenpiste', 'Sky Garden', 'GBA')
+2024-12-27 13:25:21,619 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,619 - INFO - [insertmanyvalues 56/96 (ordered; batch not supported)] ('Glückskatzen', 'Lucky Cat', 'Ninja-Dojo', 'Ninja Hideaway', 'Switch')
+2024-12-27 13:25:21,619 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,619 - INFO - [insertmanyvalues 57/96 (ordered; batch not supported)] ('Rüben', 'Turnip', 'New-York-Speedway', 'New York Minute', 'Tour')
+2024-12-27 13:25:21,619 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,619 - INFO - [insertmanyvalues 58/96 (ordered; batch not supported)] ('Rüben', 'Turnip', 'Marios Piste 3', 'Mario Circuit 3', 'SNES')
+2024-12-27 13:25:21,619 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,619 - INFO - [insertmanyvalues 59/96 (ordered; batch not supported)] ('Rüben', 'Turnip', 'Kalimari-Wüste', 'Kalimari Desert', 'N64')
+2024-12-27 13:25:21,620 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,620 - INFO - [insertmanyvalues 60/96 (ordered; batch not supported)] ('Rüben', 'Turnip', 'Waluigi-Flipper', 'Waluigi Pinball', 'DS')
+2024-12-27 13:25:21,620 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,620 - INFO - [insertmanyvalues 61/96 (ordered; batch not supported)] ('Propeller', 'Propeller', 'Sydney-Spritztour', 'Sydney Sprint', 'Tour')
+2024-12-27 13:25:21,620 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,620 - INFO - [insertmanyvalues 62/96 (ordered; batch not supported)] ('Propeller', 'Propeller', 'Schneeland', 'Snow Land', 'GBA')
+2024-12-27 13:25:21,620 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,620 - INFO - [insertmanyvalues 63/96 (ordered; batch not supported)] ('Propeller', 'Propeller', 'Pilz-Schlucht', 'Mushroom Gorge', 'Wii')
+2024-12-27 13:25:21,620 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,620 - INFO - [insertmanyvalues 64/96 (ordered; batch not supported)] ('Propeller', 'Propeller', 'Eiscreme-Eskapade', 'Sky-High Sundae', 'Switch')
+2024-12-27 13:25:21,621 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,621 - INFO - [insertmanyvalues 65/96 (ordered; batch not supported)] ('Fels', 'Rock', 'London-Tour', 'London Loop', 'Tour')
+2024-12-27 13:25:21,621 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,621 - INFO - [insertmanyvalues 66/96 (ordered; batch not supported)] ('Fels', 'Rock', 'Buu-Huu-Tal', 'Boo Lake', 'GBA')
+2024-12-27 13:25:21,621 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,621 - INFO - [insertmanyvalues 67/96 (ordered; batch not supported)] ('Fels', 'Rock', 'Gebirgspfad', 'Alpine Pass', '3DS')
+2024-12-27 13:25:21,621 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,621 - INFO - [insertmanyvalues 68/96 (ordered; batch not supported)] ('Fels', 'Rock', 'Blätterwald', 'Maple Treeway', 'Wii')
+2024-12-27 13:25:21,621 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,621 - INFO - [insertmanyvalues 69/96 (ordered; batch not supported)] ('Mond', 'Moon', 'Pflaster von berlin', 'Berlin Byways', 'Tour')
+2024-12-27 13:25:21,622 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,622 - INFO - [insertmanyvalues 70/96 (ordered; batch not supported)] ('Mond', 'Moon', 'Peachs Schlossgarten', 'Peach Gardens', 'DS')
+2024-12-27 13:25:21,622 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,622 - INFO - [insertmanyvalues 71/96 (ordered; batch not supported)] ('Mond', 'Moon', 'Bergbescherung', 'Merry Mountain', 'Switch')
+2024-12-27 13:25:21,622 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,622 - INFO - [insertmanyvalues 72/96 (ordered; batch not supported)] ('Mond', 'Moon', 'Regenbogen-Boulevard(3DS)', 'Rainbow Road(3DS)', '3DS')
+2024-12-27 13:25:21,622 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,622 - INFO - [insertmanyvalues 73/96 (ordered; batch not supported)] ('Frucht', 'Fruit', 'Ausfahrt Amsterdam', 'Amsterdam Drift', 'Tour')
+2024-12-27 13:25:21,622 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,622 - INFO - [insertmanyvalues 74/96 (ordered; batch not supported)] ('Frucht', 'Fruit', 'Flussufer-Park', 'Riverside Park', 'GBA')
+2024-12-27 13:25:21,623 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,623 - INFO - [insertmanyvalues 75/96 (ordered; batch not supported)] ('Frucht', 'Fruit', 'DK Skikane', "DK's Snowboard Cross", 'Wii')
+2024-12-27 13:25:21,623 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,623 - INFO - [insertmanyvalues 76/96 (ordered; batch not supported)] ('Frucht', 'Fruit', 'Yoshis Eiland', "Yoshi's Island", 'Switch')
+2024-12-27 13:25:21,623 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,623 - INFO - [insertmanyvalues 77/96 (ordered; batch not supported)] ('Bumerang', 'Boomerang', 'Bangkok-Abendrot', 'Bangkok Rush', 'Tour')
+2024-12-27 13:25:21,623 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,623 - INFO - [insertmanyvalues 78/96 (ordered; batch not supported)] ('Bumerang', 'Boomerang', 'Marios Piste(DS)', 'Mario Circuit(DS)', 'DS')
+2024-12-27 13:25:21,623 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,623 - INFO - [insertmanyvalues 79/96 (ordered; batch not supported)] ('Bumerang', 'Boomerang', 'Waluigi-Arena', 'Waluigi Stadium', 'GCN')
+2024-12-27 13:25:21,624 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,624 - INFO - [insertmanyvalues 80/96 (ordered; batch not supported)] ('Bumerang', 'Boomerang', 'Überholspur Singapur', 'Singapore Speedway', 'Tour')
+2024-12-27 13:25:21,624 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,624 - INFO - [insertmanyvalues 81/96 (ordered; batch not supported)] ('Feder', 'Feather', 'Athen auf Abwegen', 'Athens Dash', 'Tour')
+2024-12-27 13:25:21,624 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,624 - INFO - [insertmanyvalues 82/96 (ordered; batch not supported)] ('Feder', 'Feather', 'Daisys Dampfer', 'Daisy Cruiser', 'GCN')
+2024-12-27 13:25:21,624 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,624 - INFO - [insertmanyvalues 83/96 (ordered; batch not supported)] ('Feder', 'Feather', 'Mondblickstraße', 'Noonview highway', 'Wii')
+2024-12-27 13:25:21,624 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,624 - INFO - [insertmanyvalues 84/96 (ordered; batch not supported)] ('Feder', 'Feather', 'Bad-Parcours', 'Squeaky Clean Sprint', 'Switch')
+2024-12-27 13:25:21,625 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,625 - INFO - [insertmanyvalues 85/96 (ordered; batch not supported)] ('Doppelkirschen', 'Cherry', 'Los-Angeles-Strandpartie', 'Los Angeles Laps', 'Tour')
+2024-12-27 13:25:21,625 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,625 - INFO - [insertmanyvalues 86/96 (ordered; batch not supported)] ('Doppelkirschen', 'Cherry', 'Sonnenuntergangs-Wüste', 'Sunset Wilds', 'GBA')
+2024-12-27 13:25:21,625 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,625 - INFO - [insertmanyvalues 87/96 (ordered; batch not supported)] ('Doppelkirschen', 'Cherry', 'Koopa-Kap', 'Koopa Cape', 'Wii')
+2024-12-27 13:25:21,625 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,625 - INFO - [insertmanyvalues 88/96 (ordered; batch not supported)] ('Doppelkirschen', 'Cherry', 'Vancouver-Wildpfad', 'Vancouver Velocity', 'Tour')
+2024-12-27 13:25:21,625 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,625 - INFO - [insertmanyvalues 89/96 (ordered; batch not supported)] ('Eichel', 'Acorn', 'Rom-Rambazamba', 'Rome Avanti', 'Tour')
+2024-12-27 13:25:21,625 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,626 - INFO - [insertmanyvalues 90/96 (ordered; batch not supported)] ('Eichel', 'Acorn', 'DK Bergland', 'DK Mountain', 'GCN')
+2024-12-27 13:25:21,626 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,626 - INFO - [insertmanyvalues 91/96 (ordered; batch not supported)] ('Eichel', 'Acorn', 'Daisys Piste', 'Daisy Circuit', 'Wii')
+2024-12-27 13:25:21,626 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,626 - INFO - [insertmanyvalues 92/96 (ordered; batch not supported)] ('Eichel', 'Acorn', 'Piranha-Pflanzen-Bucht', 'Piranah Plant Cove', 'Switch')
+2024-12-27 13:25:21,626 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,626 - INFO - [insertmanyvalues 93/96 (ordered; batch not supported)] ('Stachi', 'Spiny', 'Standrundfahrt Madrid', 'Madrid Drive', 'Tour')
+2024-12-27 13:25:21,626 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,626 - INFO - [insertmanyvalues 94/96 (ordered; batch not supported)] ('Stachi', 'Spiny', 'Rosalinas Eisplanet', "Rosalina's Ice World", '3DS')
+2024-12-27 13:25:21,626 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,626 - INFO - [insertmanyvalues 95/96 (ordered; batch not supported)] ('Stachi', 'Spiny', 'Bowsers Festung 3', 'Bowser Castle 3', 'SNES')
+2024-12-27 13:25:21,627 - INFO - INSERT INTO tracks (cup_de, cup_en, track_de, track_en, game) VALUES (?, ?, ?, ?, ?) RETURNING id, created_at
+2024-12-27 13:25:21,627 - INFO - [insertmanyvalues 96/96 (ordered; batch not supported)] ('Stachi', 'Spiny', 'Regenbogen-Boulevard(Wii)', 'Rainbow Road(Wii)', 'Wii')
+2024-12-27 13:25:21,628 - INFO - COMMIT
+2024-12-27 13:25:21,633 - INFO - BEGIN (implicit)
+2024-12-27 13:25:21,633 - INFO - INSERT INTO controller (controller) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,633 - INFO - [generated in 0.00007s (insertmanyvalues) 1/5 (ordered; batch not supported)] ('Pro Controller',)
+2024-12-27 13:25:21,634 - INFO - INSERT INTO controller (controller) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,634 - INFO - [insertmanyvalues 2/5 (ordered; batch not supported)] ('JoyCon Plus Rot',)
+2024-12-27 13:25:21,634 - INFO - INSERT INTO controller (controller) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,634 - INFO - [insertmanyvalues 3/5 (ordered; batch not supported)] ('JoyCon Plus Gelb',)
+2024-12-27 13:25:21,634 - INFO - INSERT INTO controller (controller) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,634 - INFO - [insertmanyvalues 4/5 (ordered; batch not supported)] ('JoyCon Minus Blau',)
+2024-12-27 13:25:21,634 - INFO - INSERT INTO controller (controller) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,634 - INFO - [insertmanyvalues 5/5 (ordered; batch not supported)] ('JoyCon Minus Gelb',)
+2024-12-27 13:25:21,635 - INFO - COMMIT
+2024-12-27 13:25:21,639 - INFO - BEGIN (implicit)
+2024-12-27 13:25:21,639 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,639 - INFO - [generated in 0.00007s (insertmanyvalues) 1/13 (ordered; batch not supported)] ('Kai',)
+2024-12-27 13:25:21,641 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,641 - INFO - [insertmanyvalues 2/13 (ordered; batch not supported)] ('Daniel',)
+2024-12-27 13:25:21,641 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,641 - INFO - [insertmanyvalues 3/13 (ordered; batch not supported)] ('Niclas',)
+2024-12-27 13:25:21,641 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,641 - INFO - [insertmanyvalues 4/13 (ordered; batch not supported)] ('Christof',)
+2024-12-27 13:25:21,641 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,641 - INFO - [insertmanyvalues 5/13 (ordered; batch not supported)] ('David',)
+2024-12-27 13:25:21,641 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,642 - INFO - [insertmanyvalues 6/13 (ordered; batch not supported)] ('Amine',)
+2024-12-27 13:25:21,642 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,642 - INFO - [insertmanyvalues 7/13 (ordered; batch not supported)] ('Joe',)
+2024-12-27 13:25:21,642 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,642 - INFO - [insertmanyvalues 8/13 (ordered; batch not supported)] ('PKai',)
+2024-12-27 13:25:21,642 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,642 - INFO - [insertmanyvalues 9/13 (ordered; batch not supported)] ('Patrick',)
+2024-12-27 13:25:21,642 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,642 - INFO - [insertmanyvalues 10/13 (ordered; batch not supported)] ('Lina',)
+2024-12-27 13:25:21,642 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,642 - INFO - [insertmanyvalues 11/13 (ordered; batch not supported)] ('Tom',)
+2024-12-27 13:25:21,642 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,643 - INFO - [insertmanyvalues 12/13 (ordered; batch not supported)] ('Ryu',)
+2024-12-27 13:25:21,643 - INFO - INSERT INTO user (name) VALUES (?) RETURNING id, created_at
+2024-12-27 13:25:21,643 - INFO - [insertmanyvalues 13/13 (ordered; batch not supported)] ('Mimi',)
+2024-12-27 13:25:21,644 - INFO - COMMIT

@@ -1,0 +1,1330 @@
+2024-12-20 08:21:31,615 - INFO - BEGIN (implicit)
+2024-12-20 08:21:31,616 - INFO - COMMIT
+2024-12-20 08:25:13,663 - INFO - BEGIN (implicit)
+2024-12-20 08:25:13,664 - INFO - COMMIT
+2024-12-20 08:26:01,283 - INFO - BEGIN (implicit)
+2024-12-20 08:26:01,283 - INFO - COMMIT
+2024-12-20 08:27:40,434 - INFO - BEGIN (implicit)
+2024-12-20 08:27:40,435 - INFO - COMMIT
+2024-12-20 08:27:40,435 - INFO - Datenbank und Tabellen wurden erfolgreich erstellt.
+2024-12-20 08:28:01,791 - INFO - BEGIN (implicit)
+2024-12-20 08:28:01,791 - INFO - COMMIT
+2024-12-20 08:28:01,791 - INFO - Datenbank und Tabellen wurden erfolgreich erstellt.
+2024-12-20 08:28:45,891 - INFO - BEGIN (implicit)
+2024-12-20 08:28:45,891 - INFO - COMMIT
+2024-12-20 08:28:45,893 - INFO - Datenbank und Tabellen wurden erfolgreich erstellt.
+2024-12-20 08:30:43,112 - INFO - BEGIN (implicit)
+2024-12-20 08:30:43,113 - INFO - COMMIT
+2024-12-20 08:30:43,113 - INFO - Datenbank und Tabellen wurden erfolgreich erstellt.
+2024-12-20 08:31:33,624 - INFO - BEGIN (implicit)
+2024-12-20 08:31:33,624 - INFO - COMMIT
+2024-12-20 08:31:33,624 - INFO - Datenbank und Tabellen wurden erfolgreich erstellt.
+2024-12-20 08:32:21,493 - INFO - BEGIN (implicit)
+2024-12-20 08:32:21,493 - INFO - COMMIT
+2024-12-20 08:32:21,493 - INFO - Datenbank und Tabellen wurden erfolgreich erstellt.
+2024-12-20 08:33:27,468 - INFO - BEGIN (implicit)
+2024-12-20 08:33:27,468 - INFO - COMMIT
+2024-12-20 08:33:27,468 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 08:33:57,764 - INFO - BEGIN (implicit)
+2024-12-20 08:33:57,764 - INFO - COMMIT
+2024-12-20 08:33:57,765 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 08:33:57,765 - ERROR - Fehler beim Erstellen der Datenbank: type object 'Base' has no attribute '_decl_class_registry'
+2024-12-20 08:36:02,076 - INFO - BEGIN (implicit)
+2024-12-20 08:36:02,077 - INFO - COMMIT
+2024-12-20 08:36:02,077 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 08:37:34,558 - INFO - BEGIN (implicit)
+2024-12-20 08:37:34,558 - INFO - COMMIT
+2024-12-20 08:37:34,559 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 08:40:08,301 - INFO - BEGIN (implicit)
+2024-12-20 08:40:08,302 - INFO - COMMIT
+2024-12-20 08:40:08,302 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 08:40:48,294 - INFO - BEGIN (implicit)
+2024-12-20 08:40:48,294 - INFO - COMMIT
+2024-12-20 08:40:48,294 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 08:53:24,794 - INFO - BEGIN (implicit)
+2024-12-20 08:53:24,794 - INFO - COMMIT
+2024-12-20 08:53:24,794 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 08:59:04,498 - INFO - BEGIN (implicit)
+2024-12-20 08:59:04,498 - INFO - COMMIT
+2024-12-20 08:59:04,499 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 09:02:47,916 - INFO - BEGIN (implicit)
+2024-12-20 09:02:47,917 - INFO - COMMIT
+2024-12-20 09:02:47,917 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 09:14:08,117 - INFO - BEGIN (implicit)
+2024-12-20 09:14:08,117 - INFO - COMMIT
+2024-12-20 09:14:08,117 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 09:15:11,652 - INFO - BEGIN (implicit)
+2024-12-20 09:15:11,652 - INFO - COMMIT
+2024-12-20 09:15:11,652 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 09:16:21,861 - INFO - BEGIN (implicit)
+2024-12-20 09:16:21,861 - INFO - COMMIT
+2024-12-20 09:16:21,861 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 09:41:10,377 - INFO - BEGIN (implicit)
+2024-12-20 09:41:10,377 - INFO - COMMIT
+2024-12-20 09:41:10,377 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 09:55:34,355 - INFO - BEGIN (implicit)
+2024-12-20 09:55:34,355 - INFO - COMMIT
+2024-12-20 09:55:34,355 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 10:50:39,625 - INFO - BEGIN (implicit)
+2024-12-20 10:50:39,625 - INFO - COMMIT
+2024-12-20 10:50:39,625 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 10:51:58,415 - INFO - BEGIN (implicit)
+2024-12-20 10:51:58,415 - INFO - COMMIT
+2024-12-20 10:51:58,416 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 11:12:24,414 - INFO - BEGIN (implicit)
+2024-12-20 11:12:24,415 - INFO - COMMIT
+2024-12-20 11:12:24,415 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:17:22,090 - INFO - BEGIN (implicit)
+2024-12-20 12:17:22,090 - INFO - COMMIT
+2024-12-20 12:17:22,090 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:18:27,996 - INFO - BEGIN (implicit)
+2024-12-20 12:18:27,997 - INFO - COMMIT
+2024-12-20 12:18:27,998 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:26:11,552 - INFO - BEGIN (implicit)
+2024-12-20 12:26:11,553 - INFO - COMMIT
+2024-12-20 12:26:11,553 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:27:34,815 - INFO - BEGIN (implicit)
+2024-12-20 12:27:34,816 - INFO - COMMIT
+2024-12-20 12:27:34,816 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:30:05,524 - INFO - BEGIN (implicit)
+2024-12-20 12:30:05,524 - INFO - PRAGMA main.table_info("score")
+2024-12-20 12:30:05,524 - INFO - [raw sql] ()
+2024-12-20 12:30:05,534 - INFO - PRAGMA temp.table_info("score")
+2024-12-20 12:30:05,534 - INFO - [raw sql] ()
+2024-12-20 12:30:05,534 - INFO - PRAGMA main.table_info("strecken")
+2024-12-20 12:30:05,534 - INFO - [raw sql] ()
+2024-12-20 12:30:05,534 - INFO - PRAGMA temp.table_info("strecken")
+2024-12-20 12:30:05,535 - INFO - [raw sql] ()
+2024-12-20 12:30:05,535 - INFO - PRAGMA main.table_info("user")
+2024-12-20 12:30:05,535 - INFO - [raw sql] ()
+2024-12-20 12:30:05,535 - INFO - PRAGMA temp.table_info("user")
+2024-12-20 12:30:05,535 - INFO - [raw sql] ()
+2024-12-20 12:30:05,535 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 12:30:05,535 - INFO - [raw sql] ()
+2024-12-20 12:30:05,536 - INFO - PRAGMA temp.table_info("controller")
+2024-12-20 12:30:05,536 - INFO - [raw sql] ()
+2024-12-20 12:30:05,536 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 12:30:05,536 - INFO - [raw sql] ()
+2024-12-20 12:30:05,536 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-20 12:30:05,536 - INFO - [raw sql] ()
+2024-12-20 12:30:05,536 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 12:30:05,537 - INFO - [raw sql] ()
+2024-12-20 12:30:05,537 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-20 12:30:05,537 - INFO - [raw sql] ()
+2024-12-20 12:30:05,537 - INFO - PRAGMA main.table_info("data")
+2024-12-20 12:30:05,537 - INFO - [raw sql] ()
+2024-12-20 12:30:05,537 - INFO - PRAGMA temp.table_info("data")
+2024-12-20 12:30:05,537 - INFO - [raw sql] ()
+2024-12-20 12:30:05,538 - INFO - 
+CREATE TABLE score (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-20 12:30:05,538 - INFO - [no key 0.00013s] ()
+2024-12-20 12:30:05,542 - INFO - 
+CREATE TABLE strecken (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:05,544 - INFO - [no key 0.00019s] ()
+2024-12-20 12:30:05,546 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:05,546 - INFO - [no key 0.00019s] ()
+2024-12-20 12:30:05,550 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:05,550 - INFO - [no key 0.00019s] ()
+2024-12-20 12:30:05,553 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:05,553 - INFO - [no key 0.00018s] ()
+2024-12-20 12:30:05,558 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:05,558 - INFO - [no key 0.00022s] ()
+2024-12-20 12:30:05,561 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-20 12:30:05,561 - INFO - [no key 0.00026s] ()
+2024-12-20 12:30:05,565 - INFO - COMMIT
+2024-12-20 12:30:05,565 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:30:40,705 - INFO - BEGIN (implicit)
+2024-12-20 12:30:40,706 - INFO - COMMIT
+2024-12-20 12:30:40,706 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:30:52,815 - INFO - BEGIN (implicit)
+2024-12-20 12:30:52,816 - INFO - PRAGMA main.table_info("score")
+2024-12-20 12:30:52,817 - INFO - [raw sql] ()
+2024-12-20 12:30:52,818 - INFO - PRAGMA temp.table_info("score")
+2024-12-20 12:30:52,818 - INFO - [raw sql] ()
+2024-12-20 12:30:52,818 - INFO - PRAGMA main.table_info("strecken")
+2024-12-20 12:30:52,818 - INFO - [raw sql] ()
+2024-12-20 12:30:52,818 - INFO - PRAGMA temp.table_info("strecken")
+2024-12-20 12:30:52,818 - INFO - [raw sql] ()
+2024-12-20 12:30:52,818 - INFO - PRAGMA main.table_info("user")
+2024-12-20 12:30:52,818 - INFO - [raw sql] ()
+2024-12-20 12:30:52,819 - INFO - PRAGMA temp.table_info("user")
+2024-12-20 12:30:52,819 - INFO - [raw sql] ()
+2024-12-20 12:30:52,819 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 12:30:52,819 - INFO - [raw sql] ()
+2024-12-20 12:30:52,819 - INFO - PRAGMA temp.table_info("controller")
+2024-12-20 12:30:52,819 - INFO - [raw sql] ()
+2024-12-20 12:30:52,819 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 12:30:52,820 - INFO - [raw sql] ()
+2024-12-20 12:30:52,820 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-20 12:30:52,820 - INFO - [raw sql] ()
+2024-12-20 12:30:52,820 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 12:30:52,820 - INFO - [raw sql] ()
+2024-12-20 12:30:52,820 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-20 12:30:52,820 - INFO - [raw sql] ()
+2024-12-20 12:30:52,820 - INFO - PRAGMA main.table_info("data")
+2024-12-20 12:30:52,820 - INFO - [raw sql] ()
+2024-12-20 12:30:52,821 - INFO - PRAGMA temp.table_info("data")
+2024-12-20 12:30:52,821 - INFO - [raw sql] ()
+2024-12-20 12:30:52,821 - INFO - 
+CREATE TABLE score (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-20 12:30:52,821 - INFO - [no key 0.00012s] ()
+2024-12-20 12:30:52,826 - INFO - 
+CREATE TABLE strecken (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:52,827 - INFO - [no key 0.00018s] ()
+2024-12-20 12:30:52,830 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:52,830 - INFO - [no key 0.00016s] ()
+2024-12-20 12:30:52,834 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:52,834 - INFO - [no key 0.00017s] ()
+2024-12-20 12:30:52,836 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:52,838 - INFO - [no key 0.00021s] ()
+2024-12-20 12:30:52,841 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:30:52,841 - INFO - [no key 0.00018s] ()
+2024-12-20 12:30:52,844 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-20 12:30:52,844 - INFO - [no key 0.00018s] ()
+2024-12-20 12:30:52,846 - INFO - COMMIT
+2024-12-20 12:30:52,846 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:31:06,488 - INFO - BEGIN (implicit)
+2024-12-20 12:31:06,488 - INFO - COMMIT
+2024-12-20 12:31:06,488 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:31:18,247 - INFO - BEGIN (implicit)
+2024-12-20 12:31:18,247 - INFO - COMMIT
+2024-12-20 12:31:18,247 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:31:34,951 - INFO - BEGIN (implicit)
+2024-12-20 12:31:34,952 - INFO - PRAGMA main.table_info("score")
+2024-12-20 12:31:34,952 - INFO - [raw sql] ()
+2024-12-20 12:31:34,952 - INFO - PRAGMA temp.table_info("score")
+2024-12-20 12:31:34,952 - INFO - [raw sql] ()
+2024-12-20 12:31:34,953 - INFO - PRAGMA main.table_info("strecken")
+2024-12-20 12:31:34,953 - INFO - [raw sql] ()
+2024-12-20 12:31:34,953 - INFO - PRAGMA temp.table_info("strecken")
+2024-12-20 12:31:34,953 - INFO - [raw sql] ()
+2024-12-20 12:31:34,953 - INFO - PRAGMA main.table_info("user")
+2024-12-20 12:31:34,955 - INFO - [raw sql] ()
+2024-12-20 12:31:34,955 - INFO - PRAGMA temp.table_info("user")
+2024-12-20 12:31:34,955 - INFO - [raw sql] ()
+2024-12-20 12:31:34,955 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 12:31:34,955 - INFO - [raw sql] ()
+2024-12-20 12:31:34,955 - INFO - PRAGMA temp.table_info("controller")
+2024-12-20 12:31:34,955 - INFO - [raw sql] ()
+2024-12-20 12:31:34,957 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 12:31:34,957 - INFO - [raw sql] ()
+2024-12-20 12:31:34,957 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-20 12:31:34,957 - INFO - [raw sql] ()
+2024-12-20 12:31:34,957 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 12:31:34,957 - INFO - [raw sql] ()
+2024-12-20 12:31:34,957 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-20 12:31:34,958 - INFO - [raw sql] ()
+2024-12-20 12:31:34,958 - INFO - PRAGMA main.table_info("data")
+2024-12-20 12:31:34,958 - INFO - [raw sql] ()
+2024-12-20 12:31:34,958 - INFO - PRAGMA temp.table_info("data")
+2024-12-20 12:31:34,958 - INFO - [raw sql] ()
+2024-12-20 12:31:34,959 - INFO - 
+CREATE TABLE score (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-20 12:31:34,959 - INFO - [no key 0.00012s] ()
+2024-12-20 12:31:34,963 - INFO - 
+CREATE TABLE strecken (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:31:34,963 - INFO - [no key 0.00020s] ()
+2024-12-20 12:31:34,969 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:31:34,969 - INFO - [no key 0.00026s] ()
+2024-12-20 12:31:34,973 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:31:34,973 - INFO - [no key 0.00017s] ()
+2024-12-20 12:31:34,977 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:31:34,977 - INFO - [no key 0.00020s] ()
+2024-12-20 12:31:34,980 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 12:31:34,980 - INFO - [no key 0.00020s] ()
+2024-12-20 12:31:34,984 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-20 12:31:34,984 - INFO - [no key 0.00025s] ()
+2024-12-20 12:31:34,988 - INFO - COMMIT
+2024-12-20 12:31:34,988 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 12:57:56,343 - INFO - BEGIN (implicit)
+2024-12-20 12:57:56,343 - INFO - PRAGMA main.table_info("score")
+2024-12-20 12:57:56,344 - INFO - [raw sql] ()
+2024-12-20 12:57:56,345 - INFO - PRAGMA main.table_info("strecken")
+2024-12-20 12:57:56,345 - INFO - [raw sql] ()
+2024-12-20 12:57:56,345 - INFO - PRAGMA main.table_info("user")
+2024-12-20 12:57:56,345 - INFO - [raw sql] ()
+2024-12-20 12:57:56,345 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 12:57:56,345 - INFO - [raw sql] ()
+2024-12-20 12:57:56,346 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 12:57:56,346 - INFO - [raw sql] ()
+2024-12-20 12:57:56,346 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 12:57:56,346 - INFO - [raw sql] ()
+2024-12-20 12:57:56,346 - INFO - PRAGMA main.table_info("data")
+2024-12-20 12:57:56,346 - INFO - [raw sql] ()
+2024-12-20 12:57:56,347 - INFO - COMMIT
+2024-12-20 12:57:56,347 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 13:00:07,618 - INFO - BEGIN (implicit)
+2024-12-20 13:00:07,618 - INFO - PRAGMA main.table_info("score")
+2024-12-20 13:00:07,618 - INFO - [raw sql] ()
+2024-12-20 13:00:07,619 - INFO - PRAGMA temp.table_info("score")
+2024-12-20 13:00:07,619 - INFO - [raw sql] ()
+2024-12-20 13:00:07,619 - INFO - PRAGMA main.table_info("tracks")
+2024-12-20 13:00:07,619 - INFO - [raw sql] ()
+2024-12-20 13:00:07,619 - INFO - PRAGMA temp.table_info("tracks")
+2024-12-20 13:00:07,619 - INFO - [raw sql] ()
+2024-12-20 13:00:07,620 - INFO - PRAGMA main.table_info("user")
+2024-12-20 13:00:07,621 - INFO - [raw sql] ()
+2024-12-20 13:00:07,621 - INFO - PRAGMA temp.table_info("user")
+2024-12-20 13:00:07,622 - INFO - [raw sql] ()
+2024-12-20 13:00:07,622 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 13:00:07,622 - INFO - [raw sql] ()
+2024-12-20 13:00:07,622 - INFO - PRAGMA temp.table_info("controller")
+2024-12-20 13:00:07,622 - INFO - [raw sql] ()
+2024-12-20 13:00:07,622 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 13:00:07,623 - INFO - [raw sql] ()
+2024-12-20 13:00:07,623 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-20 13:00:07,623 - INFO - [raw sql] ()
+2024-12-20 13:00:07,623 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 13:00:07,623 - INFO - [raw sql] ()
+2024-12-20 13:00:07,623 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-20 13:00:07,623 - INFO - [raw sql] ()
+2024-12-20 13:00:07,624 - INFO - PRAGMA main.table_info("data")
+2024-12-20 13:00:07,624 - INFO - [raw sql] ()
+2024-12-20 13:00:07,624 - INFO - PRAGMA temp.table_info("data")
+2024-12-20 13:00:07,624 - INFO - [raw sql] ()
+2024-12-20 13:00:07,625 - INFO - 
+CREATE TABLE score (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-20 13:00:07,625 - INFO - [no key 0.00014s] ()
+2024-12-20 13:00:07,629 - INFO - 
+CREATE TABLE tracks (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 13:00:07,630 - INFO - [no key 0.00019s] ()
+2024-12-20 13:00:07,633 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 13:00:07,634 - INFO - [no key 0.00013s] ()
+2024-12-20 13:00:07,637 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 13:00:07,637 - INFO - [no key 0.00013s] ()
+2024-12-20 13:00:07,641 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 13:00:07,641 - INFO - [no key 0.00015s] ()
+2024-12-20 13:00:07,645 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 13:00:07,645 - INFO - [no key 0.00022s] ()
+2024-12-20 13:00:07,648 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-20 13:00:07,649 - INFO - [no key 0.00015s] ()
+2024-12-20 13:00:07,652 - INFO - COMMIT
+2024-12-20 13:00:07,652 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 14:33:22,158 - INFO - BEGIN (implicit)
+2024-12-20 14:33:22,159 - INFO - PRAGMA main.table_info("scores")
+2024-12-20 14:33:22,159 - INFO - [raw sql] ()
+2024-12-20 14:33:22,160 - INFO - PRAGMA temp.table_info("scores")
+2024-12-20 14:33:22,160 - INFO - [raw sql] ()
+2024-12-20 14:33:22,160 - INFO - PRAGMA main.table_info("tracks")
+2024-12-20 14:33:22,160 - INFO - [raw sql] ()
+2024-12-20 14:33:22,161 - INFO - PRAGMA main.table_info("user")
+2024-12-20 14:33:22,161 - INFO - [raw sql] ()
+2024-12-20 14:33:22,161 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 14:33:22,161 - INFO - [raw sql] ()
+2024-12-20 14:33:22,162 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 14:33:22,162 - INFO - [raw sql] ()
+2024-12-20 14:33:22,162 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 14:33:22,162 - INFO - [raw sql] ()
+2024-12-20 14:33:22,163 - INFO - PRAGMA main.table_info("data")
+2024-12-20 14:33:22,163 - INFO - [raw sql] ()
+2024-12-20 14:33:22,164 - INFO - 
+CREATE TABLE scores (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-20 14:33:22,164 - INFO - [no key 0.00021s] ()
+2024-12-20 14:33:22,168 - INFO - COMMIT
+2024-12-20 14:33:22,168 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 14:35:58,681 - INFO - BEGIN (implicit)
+2024-12-20 14:35:58,681 - INFO - PRAGMA main.table_info("scores")
+2024-12-20 14:35:58,681 - INFO - [raw sql] ()
+2024-12-20 14:35:58,682 - INFO - PRAGMA main.table_info("tracks")
+2024-12-20 14:35:58,683 - INFO - [raw sql] ()
+2024-12-20 14:35:58,683 - INFO - PRAGMA main.table_info("user")
+2024-12-20 14:35:58,683 - INFO - [raw sql] ()
+2024-12-20 14:35:58,683 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 14:35:58,683 - INFO - [raw sql] ()
+2024-12-20 14:35:58,684 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 14:35:58,684 - INFO - [raw sql] ()
+2024-12-20 14:35:58,684 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 14:35:58,684 - INFO - [raw sql] ()
+2024-12-20 14:35:58,684 - INFO - PRAGMA main.table_info("data")
+2024-12-20 14:35:58,684 - INFO - [raw sql] ()
+2024-12-20 14:35:58,685 - INFO - COMMIT
+2024-12-20 14:35:58,685 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 15:09:23,345 - INFO - BEGIN (implicit)
+2024-12-20 15:09:23,346 - INFO - PRAGMA main.table_info("scores")
+2024-12-20 15:09:23,346 - INFO - [raw sql] ()
+2024-12-20 15:09:23,347 - INFO - PRAGMA main.table_info("tracks")
+2024-12-20 15:09:23,347 - INFO - [raw sql] ()
+2024-12-20 15:09:23,347 - INFO - PRAGMA main.table_info("user")
+2024-12-20 15:09:23,347 - INFO - [raw sql] ()
+2024-12-20 15:09:23,347 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 15:09:23,347 - INFO - [raw sql] ()
+2024-12-20 15:09:23,348 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 15:09:23,348 - INFO - [raw sql] ()
+2024-12-20 15:09:23,348 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 15:09:23,348 - INFO - [raw sql] ()
+2024-12-20 15:09:23,348 - INFO - PRAGMA main.table_info("data")
+2024-12-20 15:09:23,348 - INFO - [raw sql] ()
+2024-12-20 15:09:23,349 - INFO - COMMIT
+2024-12-20 15:09:23,349 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-20 15:15:06,120 - INFO - BEGIN (implicit)
+2024-12-20 15:15:06,121 - INFO - PRAGMA main.table_info("scores")
+2024-12-20 15:15:06,121 - INFO - [raw sql] ()
+2024-12-20 15:15:06,121 - INFO - PRAGMA temp.table_info("scores")
+2024-12-20 15:15:06,121 - INFO - [raw sql] ()
+2024-12-20 15:15:06,123 - INFO - PRAGMA main.table_info("tracks")
+2024-12-20 15:15:06,123 - INFO - [raw sql] ()
+2024-12-20 15:15:06,123 - INFO - PRAGMA temp.table_info("tracks")
+2024-12-20 15:15:06,123 - INFO - [raw sql] ()
+2024-12-20 15:15:06,123 - INFO - PRAGMA main.table_info("user")
+2024-12-20 15:15:06,123 - INFO - [raw sql] ()
+2024-12-20 15:15:06,123 - INFO - PRAGMA temp.table_info("user")
+2024-12-20 15:15:06,123 - INFO - [raw sql] ()
+2024-12-20 15:15:06,123 - INFO - PRAGMA main.table_info("controller")
+2024-12-20 15:15:06,123 - INFO - [raw sql] ()
+2024-12-20 15:15:06,123 - INFO - PRAGMA temp.table_info("controller")
+2024-12-20 15:15:06,124 - INFO - [raw sql] ()
+2024-12-20 15:15:06,124 - INFO - PRAGMA main.table_info("game_place")
+2024-12-20 15:15:06,124 - INFO - [raw sql] ()
+2024-12-20 15:15:06,124 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-20 15:15:06,124 - INFO - [raw sql] ()
+2024-12-20 15:15:06,124 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-20 15:15:06,124 - INFO - [raw sql] ()
+2024-12-20 15:15:06,125 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-20 15:15:06,125 - INFO - [raw sql] ()
+2024-12-20 15:15:06,125 - INFO - PRAGMA main.table_info("data")
+2024-12-20 15:15:06,126 - INFO - [raw sql] ()
+2024-12-20 15:15:06,126 - INFO - PRAGMA temp.table_info("data")
+2024-12-20 15:15:06,126 - INFO - [raw sql] ()
+2024-12-20 15:15:06,127 - INFO - 
+CREATE TABLE scores (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-20 15:15:06,127 - INFO - [no key 0.00022s] ()
+2024-12-20 15:15:06,132 - INFO - 
+CREATE TABLE tracks (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 15:15:06,132 - INFO - [no key 0.00018s] ()
+2024-12-20 15:15:06,136 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+2024-12-20 15:15:06,136 - INFO - [no key 0.00018s] ()
+2024-12-20 15:15:06,139 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 15:15:06,139 - INFO - [no key 0.00016s] ()
+2024-12-20 15:15:06,143 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 15:15:06,144 - INFO - [no key 0.00028s] ()
+2024-12-20 15:15:06,146 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-20 15:15:06,147 - INFO - [no key 0.00019s] ()
+2024-12-20 15:15:06,151 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-20 15:15:06,151 - INFO - [no key 0.00018s] ()
+2024-12-20 15:15:06,154 - INFO - COMMIT
+2024-12-20 15:15:06,154 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-23 14:07:06,544 - INFO - BEGIN (implicit)
+2024-12-23 14:07:06,544 - INFO - PRAGMA main.table_info("scores")
+2024-12-23 14:07:06,545 - INFO - [raw sql] ()
+2024-12-23 14:07:06,549 - INFO - PRAGMA main.table_info("tracks")
+2024-12-23 14:07:06,549 - INFO - [raw sql] ()
+2024-12-23 14:07:06,550 - INFO - PRAGMA main.table_info("user")
+2024-12-23 14:07:06,550 - INFO - [raw sql] ()
+2024-12-23 14:07:06,550 - INFO - PRAGMA main.table_info("controller")
+2024-12-23 14:07:06,550 - INFO - [raw sql] ()
+2024-12-23 14:07:06,551 - INFO - PRAGMA main.table_info("game_place")
+2024-12-23 14:07:06,551 - INFO - [raw sql] ()
+2024-12-23 14:07:06,552 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-23 14:07:06,552 - INFO - [raw sql] ()
+2024-12-23 14:07:06,552 - INFO - PRAGMA main.table_info("data")
+2024-12-23 14:07:06,552 - INFO - [raw sql] ()
+2024-12-23 14:07:06,553 - INFO - COMMIT
+2024-12-23 14:07:06,553 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-23 14:07:43,957 - INFO - BEGIN (implicit)
+2024-12-23 14:07:43,957 - INFO - PRAGMA main.table_info("scores")
+2024-12-23 14:07:43,957 - INFO - [raw sql] ()
+2024-12-23 14:07:43,958 - INFO - PRAGMA temp.table_info("scores")
+2024-12-23 14:07:43,958 - INFO - [raw sql] ()
+2024-12-23 14:07:43,959 - INFO - PRAGMA main.table_info("tracks")
+2024-12-23 14:07:43,959 - INFO - [raw sql] ()
+2024-12-23 14:07:43,959 - INFO - PRAGMA temp.table_info("tracks")
+2024-12-23 14:07:43,960 - INFO - [raw sql] ()
+2024-12-23 14:07:43,960 - INFO - PRAGMA main.table_info("user")
+2024-12-23 14:07:43,960 - INFO - [raw sql] ()
+2024-12-23 14:07:43,960 - INFO - PRAGMA temp.table_info("user")
+2024-12-23 14:07:43,961 - INFO - [raw sql] ()
+2024-12-23 14:07:43,961 - INFO - PRAGMA main.table_info("controller")
+2024-12-23 14:07:43,961 - INFO - [raw sql] ()
+2024-12-23 14:07:43,961 - INFO - PRAGMA temp.table_info("controller")
+2024-12-23 14:07:43,962 - INFO - [raw sql] ()
+2024-12-23 14:07:43,962 - INFO - PRAGMA main.table_info("game_place")
+2024-12-23 14:07:43,962 - INFO - [raw sql] ()
+2024-12-23 14:07:43,962 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-23 14:07:43,962 - INFO - [raw sql] ()
+2024-12-23 14:07:43,963 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-23 14:07:43,963 - INFO - [raw sql] ()
+2024-12-23 14:07:43,963 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-23 14:07:43,963 - INFO - [raw sql] ()
+2024-12-23 14:07:43,964 - INFO - PRAGMA main.table_info("data")
+2024-12-23 14:07:43,964 - INFO - [raw sql] ()
+2024-12-23 14:07:43,964 - INFO - PRAGMA temp.table_info("data")
+2024-12-23 14:07:43,964 - INFO - [raw sql] ()
+2024-12-23 14:07:43,965 - INFO - 
+CREATE TABLE scores (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-23 14:07:43,966 - INFO - [no key 0.00031s] ()
+2024-12-23 14:07:43,972 - INFO - 
+CREATE TABLE tracks (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:07:43,973 - INFO - [no key 0.00028s] ()
+2024-12-23 14:07:43,977 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+2024-12-23 14:07:43,977 - INFO - [no key 0.00026s] ()
+2024-12-23 14:07:43,982 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:07:43,983 - INFO - [no key 0.00027s] ()
+2024-12-23 14:07:43,987 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:07:43,987 - INFO - [no key 0.00033s] ()
+2024-12-23 14:07:43,993 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:07:43,993 - INFO - [no key 0.00026s] ()
+2024-12-23 14:07:43,999 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-23 14:07:44,000 - INFO - [no key 0.00027s] ()
+2024-12-23 14:07:44,004 - INFO - COMMIT
+2024-12-23 14:07:44,005 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-23 14:21:44,171 - INFO - BEGIN (implicit)
+2024-12-23 14:21:44,172 - INFO - PRAGMA main.table_info("scores")
+2024-12-23 14:21:44,172 - INFO - [raw sql] ()
+2024-12-23 14:21:44,173 - INFO - PRAGMA temp.table_info("scores")
+2024-12-23 14:21:44,173 - INFO - [raw sql] ()
+2024-12-23 14:21:44,173 - INFO - PRAGMA main.table_info("tracks")
+2024-12-23 14:21:44,174 - INFO - [raw sql] ()
+2024-12-23 14:21:44,174 - INFO - PRAGMA temp.table_info("tracks")
+2024-12-23 14:21:44,174 - INFO - [raw sql] ()
+2024-12-23 14:21:44,174 - INFO - PRAGMA main.table_info("user")
+2024-12-23 14:21:44,174 - INFO - [raw sql] ()
+2024-12-23 14:21:44,175 - INFO - PRAGMA temp.table_info("user")
+2024-12-23 14:21:44,175 - INFO - [raw sql] ()
+2024-12-23 14:21:44,175 - INFO - PRAGMA main.table_info("controller")
+2024-12-23 14:21:44,175 - INFO - [raw sql] ()
+2024-12-23 14:21:44,176 - INFO - PRAGMA temp.table_info("controller")
+2024-12-23 14:21:44,176 - INFO - [raw sql] ()
+2024-12-23 14:21:44,176 - INFO - PRAGMA main.table_info("game_place")
+2024-12-23 14:21:44,176 - INFO - [raw sql] ()
+2024-12-23 14:21:44,176 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-23 14:21:44,177 - INFO - [raw sql] ()
+2024-12-23 14:21:44,177 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-23 14:21:44,177 - INFO - [raw sql] ()
+2024-12-23 14:21:44,177 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-23 14:21:44,177 - INFO - [raw sql] ()
+2024-12-23 14:21:44,178 - INFO - PRAGMA main.table_info("data")
+2024-12-23 14:21:44,178 - INFO - [raw sql] ()
+2024-12-23 14:21:44,178 - INFO - PRAGMA temp.table_info("data")
+2024-12-23 14:21:44,178 - INFO - [raw sql] ()
+2024-12-23 14:21:44,180 - INFO - 
+CREATE TABLE scores (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-23 14:21:44,180 - INFO - [no key 0.00018s] ()
+2024-12-23 14:21:44,184 - INFO - 
+CREATE TABLE tracks (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:21:44,184 - INFO - [no key 0.00025s] ()
+2024-12-23 14:21:44,188 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+2024-12-23 14:21:44,189 - INFO - [no key 0.00022s] ()
+2024-12-23 14:21:44,193 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:21:44,193 - INFO - [no key 0.00022s] ()
+2024-12-23 14:21:44,198 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:21:44,198 - INFO - [no key 0.00027s] ()
+2024-12-23 14:21:44,203 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:21:44,203 - INFO - [no key 0.00034s] ()
+2024-12-23 14:21:44,208 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-23 14:21:44,208 - INFO - [no key 0.00031s] ()
+2024-12-23 14:21:44,212 - INFO - COMMIT
+2024-12-23 14:21:44,214 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-23 14:23:24,859 - INFO - BEGIN (implicit)
+2024-12-23 14:23:24,859 - INFO - PRAGMA main.table_info("scores")
+2024-12-23 14:23:24,860 - INFO - [raw sql] ()
+2024-12-23 14:23:24,861 - INFO - PRAGMA temp.table_info("scores")
+2024-12-23 14:23:24,861 - INFO - [raw sql] ()
+2024-12-23 14:23:24,861 - INFO - PRAGMA main.table_info("tracks")
+2024-12-23 14:23:24,861 - INFO - [raw sql] ()
+2024-12-23 14:23:24,862 - INFO - PRAGMA temp.table_info("tracks")
+2024-12-23 14:23:24,862 - INFO - [raw sql] ()
+2024-12-23 14:23:24,862 - INFO - PRAGMA main.table_info("user")
+2024-12-23 14:23:24,862 - INFO - [raw sql] ()
+2024-12-23 14:23:24,863 - INFO - PRAGMA temp.table_info("user")
+2024-12-23 14:23:24,863 - INFO - [raw sql] ()
+2024-12-23 14:23:24,863 - INFO - PRAGMA main.table_info("controller")
+2024-12-23 14:23:24,863 - INFO - [raw sql] ()
+2024-12-23 14:23:24,864 - INFO - PRAGMA temp.table_info("controller")
+2024-12-23 14:23:24,864 - INFO - [raw sql] ()
+2024-12-23 14:23:24,864 - INFO - PRAGMA main.table_info("game_place")
+2024-12-23 14:23:24,864 - INFO - [raw sql] ()
+2024-12-23 14:23:24,865 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-23 14:23:24,865 - INFO - [raw sql] ()
+2024-12-23 14:23:24,865 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-23 14:23:24,865 - INFO - [raw sql] ()
+2024-12-23 14:23:24,866 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-23 14:23:24,866 - INFO - [raw sql] ()
+2024-12-23 14:23:24,866 - INFO - PRAGMA main.table_info("data")
+2024-12-23 14:23:24,866 - INFO - [raw sql] ()
+2024-12-23 14:23:24,866 - INFO - PRAGMA temp.table_info("data")
+2024-12-23 14:23:24,867 - INFO - [raw sql] ()
+2024-12-23 14:23:24,867 - INFO - 
+CREATE TABLE scores (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-23 14:23:24,868 - INFO - [no key 0.00022s] ()
+2024-12-23 14:23:24,874 - INFO - 
+CREATE TABLE tracks (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:23:24,874 - INFO - [no key 0.00024s] ()
+2024-12-23 14:23:24,879 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+2024-12-23 14:23:24,879 - INFO - [no key 0.00021s] ()
+2024-12-23 14:23:24,884 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:23:24,884 - INFO - [no key 0.00023s] ()
+2024-12-23 14:23:24,889 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:23:24,889 - INFO - [no key 0.00024s] ()
+2024-12-23 14:23:24,894 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:23:24,895 - INFO - [no key 0.00022s] ()
+2024-12-23 14:23:24,900 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-23 14:23:24,900 - INFO - [no key 0.00024s] ()
+2024-12-23 14:23:24,905 - INFO - COMMIT
+2024-12-23 14:23:24,905 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-23 14:27:24,395 - INFO - BEGIN (implicit)
+2024-12-23 14:27:24,396 - INFO - PRAGMA main.table_info("scores")
+2024-12-23 14:27:24,396 - INFO - [raw sql] ()
+2024-12-23 14:27:24,397 - INFO - PRAGMA main.table_info("tracks")
+2024-12-23 14:27:24,397 - INFO - [raw sql] ()
+2024-12-23 14:27:24,398 - INFO - PRAGMA main.table_info("user")
+2024-12-23 14:27:24,398 - INFO - [raw sql] ()
+2024-12-23 14:27:24,398 - INFO - PRAGMA main.table_info("controller")
+2024-12-23 14:27:24,398 - INFO - [raw sql] ()
+2024-12-23 14:27:24,399 - INFO - PRAGMA main.table_info("game_place")
+2024-12-23 14:27:24,399 - INFO - [raw sql] ()
+2024-12-23 14:27:24,399 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-23 14:27:24,399 - INFO - [raw sql] ()
+2024-12-23 14:27:24,401 - INFO - PRAGMA main.table_info("data")
+2024-12-23 14:27:24,401 - INFO - [raw sql] ()
+2024-12-23 14:27:24,401 - INFO - COMMIT
+2024-12-23 14:27:24,402 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-23 14:27:57,075 - INFO - BEGIN (implicit)
+2024-12-23 14:27:57,076 - INFO - COMMIT
+2024-12-23 14:27:57,076 - INFO - Datenbank und Tabellen erfolgreich erstellt.
+2024-12-23 14:28:29,442 - INFO - BEGIN (implicit)
+2024-12-23 14:28:29,442 - INFO - PRAGMA main.table_info("scores")
+2024-12-23 14:28:29,443 - INFO - [raw sql] ()
+2024-12-23 14:28:29,443 - INFO - PRAGMA temp.table_info("scores")
+2024-12-23 14:28:29,443 - INFO - [raw sql] ()
+2024-12-23 14:28:29,444 - INFO - PRAGMA main.table_info("tracks")
+2024-12-23 14:28:29,444 - INFO - [raw sql] ()
+2024-12-23 14:28:29,444 - INFO - PRAGMA temp.table_info("tracks")
+2024-12-23 14:28:29,444 - INFO - [raw sql] ()
+2024-12-23 14:28:29,445 - INFO - PRAGMA main.table_info("user")
+2024-12-23 14:28:29,445 - INFO - [raw sql] ()
+2024-12-23 14:28:29,445 - INFO - PRAGMA temp.table_info("user")
+2024-12-23 14:28:29,445 - INFO - [raw sql] ()
+2024-12-23 14:28:29,445 - INFO - PRAGMA main.table_info("controller")
+2024-12-23 14:28:29,446 - INFO - [raw sql] ()
+2024-12-23 14:28:29,446 - INFO - PRAGMA temp.table_info("controller")
+2024-12-23 14:28:29,446 - INFO - [raw sql] ()
+2024-12-23 14:28:29,446 - INFO - PRAGMA main.table_info("game_place")
+2024-12-23 14:28:29,446 - INFO - [raw sql] ()
+2024-12-23 14:28:29,447 - INFO - PRAGMA temp.table_info("game_place")
+2024-12-23 14:28:29,447 - INFO - [raw sql] ()
+2024-12-23 14:28:29,447 - INFO - PRAGMA main.table_info("game_tracks")
+2024-12-23 14:28:29,447 - INFO - [raw sql] ()
+2024-12-23 14:28:29,447 - INFO - PRAGMA temp.table_info("game_tracks")
+2024-12-23 14:28:29,448 - INFO - [raw sql] ()
+2024-12-23 14:28:29,448 - INFO - PRAGMA main.table_info("data")
+2024-12-23 14:28:29,448 - INFO - [raw sql] ()
+2024-12-23 14:28:29,448 - INFO - PRAGMA temp.table_info("data")
+2024-12-23 14:28:29,448 - INFO - [raw sql] ()
+2024-12-23 14:28:29,449 - INFO - 
+CREATE TABLE scores (
+	place INTEGER NOT NULL, 
+	points INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (place)
+)
+
+
+2024-12-23 14:28:29,449 - INFO - [no key 0.00018s] ()
+2024-12-23 14:28:29,456 - INFO - 
+CREATE TABLE tracks (
+	id INTEGER NOT NULL, 
+	cup_de VARCHAR(50), 
+	cup_en VARCHAR(50), 
+	track_de VARCHAR(50), 
+	track_en VARCHAR(50), 
+	game VARCHAR(50), 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:28:29,456 - INFO - [no key 0.00033s] ()
+2024-12-23 14:28:29,461 - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+2024-12-23 14:28:29,461 - INFO - [no key 0.00024s] ()
+2024-12-23 14:28:29,465 - INFO - 
+CREATE TABLE controller (
+	id INTEGER NOT NULL, 
+	controller VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:28:29,465 - INFO - [no key 0.00023s] ()
+2024-12-23 14:28:29,469 - INFO - 
+CREATE TABLE game_place (
+	id INTEGER NOT NULL, 
+	place_1 INTEGER NOT NULL, 
+	place_2 INTEGER NOT NULL, 
+	place_3 INTEGER NOT NULL, 
+	place_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:28:29,469 - INFO - [no key 0.00023s] ()
+2024-12-23 14:28:29,473 - INFO - 
+CREATE TABLE game_tracks (
+	id INTEGER NOT NULL, 
+	track_1 INTEGER NOT NULL, 
+	track_2 INTEGER NOT NULL, 
+	track_3 INTEGER NOT NULL, 
+	track_4 INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2024-12-23 14:28:29,473 - INFO - [no key 0.00024s] ()
+2024-12-23 14:28:29,478 - INFO - 
+CREATE TABLE data (
+	id INTEGER NOT NULL, 
+	user VARCHAR(50) NOT NULL, 
+	places_id INTEGER NOT NULL, 
+	controller_id INTEGER NOT NULL, 
+	tracks_id INTEGER NOT NULL, 
+	drink_count INTEGER NOT NULL, 
+	kiff_count INTEGER NOT NULL, 
+	datum TIMESTAMP NOT NULL, 
+	rennen_tag INTEGER NOT NULL, 
+	gesamt_score INTEGER NOT NULL, 
+	beamer BOOLEAN NOT NULL, 
+	fehlstarts INTEGER NOT NULL, 
+	created_at TIMESTAMP DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(places_id) REFERENCES game_place (id), 
+	FOREIGN KEY(controller_id) REFERENCES controller (id), 
+	FOREIGN KEY(tracks_id) REFERENCES game_tracks (id)
+)
+
+
+2024-12-23 14:28:29,478 - INFO - [no key 0.00024s] ()
+2024-12-23 14:28:29,482 - INFO - COMMIT
+2024-12-23 14:28:29,483 - INFO - Datenbank und Tabellen erfolgreich erstellt.
